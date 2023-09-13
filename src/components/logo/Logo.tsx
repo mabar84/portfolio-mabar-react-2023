@@ -1,15 +1,10 @@
 import React from "react";
-import styled from "styled-components";
+import {Icon} from "../icon/Icon";
 
 export const Logo = () => {
-  return (
-    <a href="#">
-      <img src="" alt="logo" />
-    </a>
-  );
+    return (
+        <a href="#">
+            <Icon iconId={'coins'} width={'100'} height={'100'} viewBox={'0 0 100 100'}/>
+        </a>
+    );
 };
-
-const StyledHeader = styled.header`
-  background-color: #9b4242;
-  display: flex;
-`;
