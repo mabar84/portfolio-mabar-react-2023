@@ -1,20 +1,18 @@
-import React from 'react';
+import React from "react";
+import styled from "styled-components";
+import { Logo } from "../../components/logo/Logo";
+import { Nav } from "../nav/Nav";
 
 export const Header = () => {
-    return (
-        <header>
-            <a href="#">
-                <img src="" alt="logo"/>
-            </a>
-
-
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </header>
-    );
+  return (
+    <StyledHeader>
+      <Logo />
+      <Nav />
+    </StyledHeader>
+  );
 };
+
+const StyledHeader = styled.header`
+  background-color: #9b4242;
+  display: flex;
+`;
