@@ -8,30 +8,20 @@ export const Nav = () => {
             <ul>
 
                 <li>
-                    {/* eslint-disable-next-line react/jsx-no-undef */}
-                    <Link to='/'>Home</Link>
+                    <a href="/">Home</a>
                 </li>
                 <li>
-                    <Link to='/about'>About</Link>
-
+                    <a href="/about">About</a>
                 </li>
-
-                {/*<li>*/}
-                {/*    <a href="src/components/menu/Nav#">Home</a>*/}
-                {/*</li>*/}
-                {/*<li>*/}
-                {/*    <a href="src/components/menu/Nav#">About</a>*/}
-                {/*</li>    */}
-
-                {/*<li>*/}
-                {/*    <a href="src/components/menu/Nav#">Tech Stack</a>*/}
-                {/*</li>*/}
-                {/*<li>*/}
-                {/*    <a href="src/components/menu/Nav#">Projects</a>*/}
-                {/*</li>*/}
-                {/*<li>*/}
-                {/*    <a href="src/components/menu/Nav#">Contact</a>*/}
-                {/*</li>*/}
+                <li>
+                    <a href="/skills">Tech Stack</a>
+                </li>
+                <li>
+                    <a href="/projects">Projects</a>
+                </li>
+                <li>
+                    <a href="/contacts">Contact</a>
+                </li>
             </ul>
         </StyledNav>
     );

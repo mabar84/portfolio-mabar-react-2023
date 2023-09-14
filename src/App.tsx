@@ -6,24 +6,23 @@ import {SpaSkills} from "./layout/sections/spa-skills/SpaSkills";
 import {SpaAbout} from "./layout/sections/spa-about/SpaAbout";
 import {SpaProjects} from "./layout/sections/spa-projects/SpaProjects";
 import {SpaContacts} from "./layout/sections/spa-contacts/SpaContacts";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 function App() {
     return (
         <div className="App">
-            <Header/>
-            {/*<main>*/}
-            {/*    <Routes>*/}
-            {/*        <Route path='/about'>*/}
-            {/*            <SpaAbout/>*/}
-            {/*        </Route>*/}
+            <Router>
+                <Header/>
 
-            {/*        <Route path='/'>*/}
-            {/*            <SpaMain/>*/}
-
-            {/*        </Route>*/}
-            {/*    </Routes>*/}
-            {/*</main>*/}
+                <Routes>
+                    <Route element={<SpaMain/>} path='/'/>
+                    <Route element={<SpaMain/>} path='/home'/>
+                    <Route element={<SpaAbout/>} path='/about'/>
+                    <Route element={<SpaSkills/>} path='/skills'/>
+                    <Route element={<SpaProjects/>} path='/projects'/>
+                    <Route element={<SpaContacts/>} path='/contacts'/>
+                </Routes>
+            </Router>
 
 
             {/*<SpaSkills/>*/}
