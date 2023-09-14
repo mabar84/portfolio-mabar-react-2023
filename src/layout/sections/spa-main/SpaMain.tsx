@@ -3,9 +3,10 @@ import styled from "styled-components";
 import mainPhoto from "../../../assets/images/my-photo.jpg";
 
 
-export const Main = () => {
+export const SpaMain = () => {
     return (
         <StyledMainPhoto>
+            SpaMain
             <img src={mainPhoto} alt="photo"/>
         </StyledMainPhoto>
 
