@@ -1,10 +1,33 @@
 import React from "react";
 import {Icon} from "../icon/Icon";
+import styled from "styled-components";
+import {myTheme} from "../../styles/Theme.styled";
 
 export const Logo = () => {
     return (
-        <a href="#">
-            <Icon iconId={'coins'} width={'100'} height={'100'} viewBox={'0 0 100 100'}/>
-        </a>
+        <StyledLogo href="/">
+            <Icon iconId={'logo'} width={'105'} height={'105'} viewBox={'0 0 105 105'}/>
+        </StyledLogo>
+
     );
 };
+
+const StyledLogo = styled.a`
+  margin-right: auto;
+
+  svg {
+    fill: white;
+    stroke: black;
+    transition: fill 1s, stroke 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:hover {
+    svg {
+      fill: ${myTheme.colors.gradientFrom};
+      stroke: rgba(231, 15, 170, 0.76);
+    }
+  }
+`

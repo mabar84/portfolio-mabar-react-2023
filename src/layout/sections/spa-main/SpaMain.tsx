@@ -1,58 +1,26 @@
 import React from 'react';
+import {MainPhoto} from "./main-photo/MainPhoto";
+import {H2, H2Colored} from "../../../components/h2/H2";
+import {StyledH1} from "../../../components/h1/H1";
+import {StyledFlexWrapper} from "../../../components/StyledFlexWrapper";
 import styled from "styled-components";
-import mainPhoto from "../../../assets/images/my-photo.jpg";
+import {StyledSectionContainer} from "../../../components/SectionContainer";
 
 
 export const SpaMain = () => {
     return (
-        <StyledMainPhoto>
-            SpaMain
-            <div className=""></div>
-            <img src={mainPhoto} alt="photo"/>
-        </StyledMainPhoto>
+        <StyledSectionContainer>
+            <StyledFlexWrapper className={'container'} align={'center'} gap={'50px'}>
+                <div className="">
+                    <H2Colored content={'👋,'} coloredContent={'Hi'}/>
+                    <H2 content={'My name is'}/>
+                    <H2 content={'Mikhail Baranouski'}/>
 
-    );
+                    <StyledH1> I'm a Web Developer </StyledH1>
+                </div>
+
+                <MainPhoto/>
+            </StyledFlexWrapper>
+        </StyledSectionContainer>
+    )
 };
-
-const StyledMainPhoto = styled.div`
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-
-  position: relative;
-
-  div {
-    width: 100%;
-    height: 100%;
-    border: 10px solid transparent;
-    border-radius: 50%;
-    transition: transform 2s;
-
-    background: linear-gradient(0deg, #00C0FD, #E70FAA) border-box;
-  }
-
-  &:hover div {
-    transform: rotate(180deg);
-  }
-
-
-  img {
-    width: calc(100% - 20px);
-    height: calc(100% - 20px);
-    border-radius: 50%;
-    position: absolute;
-    left: calc(50% - 0px);
-    top: calc(50% + 20px);
-    transform: translate(-50%, -50%);
-
-
-  }
-
-  //-webkit-mask: linear-gradient(#fff 0 0) padding-box,
-  //linear-gradient(#fff 0 0);
-  //-webkit-mask-composite: xor;
-  //mask-composite: exclude;
-`
-
-
-//#E70FAA, #00C0FD

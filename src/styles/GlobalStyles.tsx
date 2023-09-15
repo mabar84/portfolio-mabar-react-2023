@@ -15,7 +15,18 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    background-color: ${myTheme.colors.grey.light};
+    background-color: ${myTheme.colors.background};
+  }
+
+  .App {
+    padding-bottom: 100px;
+
+  }
+
+  .container {
+    max-width: 1180px;
+    margin: 0 auto;
+    overflow: hidden;
   }
 
   a {
