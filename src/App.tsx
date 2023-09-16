@@ -1,5 +1,4 @@
 import "./App.css";
-import styled from "styled-components";
 import {Header} from "./layout/header/Header";
 import {SpaMain} from "./layout/sections/spa-main/SpaMain";
 import {SpaSkills} from "./layout/sections/spa-skills/SpaSkills";
@@ -23,11 +22,6 @@ function App() {
                     <Route element={<SpaContacts/>} path='/contact'/>
                 </Routes>
             </Router>
-
-
-            {/*<SpaSkills/>*/}
-            {/*<SpaProjects/>*/}
-            {/*<SpaContacts/>*/}
         </div>
     );
 }

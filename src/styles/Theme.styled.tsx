@@ -76,6 +76,12 @@ export const myTheme = {
                 place: '',
                 showPlace: false
             }
+        ],
+        skills: [
+            'HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'SASS', 'Bootstrap', 'JQuery', 'Storybook'
+        ],
+        tools: [
+            'VSCode', 'bibucket', 'Git', 'Github', 'Figma', 'npm', 'Photoshop', 'yarn', 'WebStorm', 'FileZilla',
         ]
     }
 }

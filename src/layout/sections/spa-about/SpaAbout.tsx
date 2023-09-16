@@ -4,7 +4,6 @@ import {StyledSectionTitle} from "../../../components/StyledSectionTitle";
 import {StyledSectionContainer} from "../../../components/SectionContainer";
 import {StyledSectionText} from "../../../components/StyledSectionText";
 import {ExperienceCard} from "../../../components/experience-card/ExperienceCard";
-import {EducationCard} from "../../../components/experience-card/EducationCard";
 import {myTheme} from "../../../styles/Theme.styled";
 
 export const SpaAbout = () => {
@@ -16,8 +15,8 @@ export const SpaAbout = () => {
                 </StyledSectionTitle>
                 <StyledSectionText>
                     I have been interested in modern technologies all my life and working on a computer almost every day
-                    for
-                    almost a quarter of a century. Since February 2021, web development has become my main profession.
+                    for almost a quarter of a century. Since February 2021, web development has become my main
+                    profession.
                 </StyledSectionText>
                 <StyledSectionTitle>
                     Work Experience
