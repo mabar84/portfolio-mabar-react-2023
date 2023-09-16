@@ -8,10 +8,13 @@ import iconsSprite from "../../../../assets/images/icons-sprite.svg";
 
 
 export const MainPhoto = () => {
+    let name = 'my'
     return (
         <StyledMainPhoto>
             <div className=""></div>
-            <img src={mainPhoto}/>
+            <img className="profile-photo" src={require(`./../../../../assets/images/${name}-photo.jpg`)}
+                 alt={name}/>
+            {/*<img src={mainPhoto}/>*/}
 
             {/*<Icon iconId={'abstract'} height={'444'} width={'444'} viewBox={'0 0 444 444'}/>*/}
         </StyledMainPhoto>
