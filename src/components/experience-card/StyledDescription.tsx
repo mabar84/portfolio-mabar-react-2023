@@ -1,8 +1,14 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import {myTheme} from "../../styles/Theme.styled";
 
-export const StyledDescription = styled.span`
-  width: 200px;
+type StyledDescriptionPropsType = {
+    showPlace?: boolean
+}
+
+export const StyledDescription = styled.span<StyledDescriptionPropsType>`
+  ${props => props.showPlace && css`
+    width: 200px;`}
+
   display: inline-block;
   color: ${myTheme.colors.description};
   font-size: 12px;

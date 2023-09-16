@@ -7,24 +7,13 @@ import {Icon} from "../icon/Icon";
 export const SocialMedia = () => {
     return (
         <StyledSocialMedia>
-
-            <li>
-                <a href="https://github.com/mabar84">
-                    <Icon iconId={'soc-git'} viewBox={'0 0 50 50'} width={'48'} height={'48'}/>
-
-                </a>
-            </li>
-            <li>
-                <a href="https://tele.click/@mabartutby">
-                    <Icon iconId={'soc-telegram'} viewBox={'0 0 50 50'} width={'48'} height={'48'}/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <Icon iconId={'soc-linkedin'} viewBox={'0 0 50 50'} width={'48'} height={'48'}/>
-                </a>
-            </li>
-
+            {myTheme.state.socialMediaItems.map((el, ind) => {
+                return <li key={ind}>
+                    <a href={el.href}>
+                        <Icon iconId={el.iconId} viewBox={'0 0 50 50'} width={'48'} height={'48'}/>
+                    </a>
+                </li>
+            })}
         </StyledSocialMedia>
     );
 };

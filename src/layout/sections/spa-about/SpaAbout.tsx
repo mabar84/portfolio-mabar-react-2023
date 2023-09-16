@@ -5,6 +5,7 @@ import {StyledSectionContainer} from "../../../components/SectionContainer";
 import {StyledSectionText} from "../../../components/StyledSectionText";
 import {ExperienceCard} from "../../../components/experience-card/ExperienceCard";
 import {EducationCard} from "../../../components/experience-card/EducationCard";
+import {myTheme} from "../../../styles/Theme.styled";
 
 export const SpaAbout = () => {
     return (
@@ -22,20 +23,20 @@ export const SpaAbout = () => {
                     Work Experience
                 </StyledSectionTitle>
 
-                <ExperienceCard title={'layout designer'} organisation={'1'} place={'2'} date={'3'}/>
-                <ExperienceCard title={'layout designer'} organisation={'1'} place={'2'} date={'3'}/>
-                <ExperienceCard title={'layout designer'} organisation={'1'} place={'2'} date={'3'}/>
+                {myTheme.state.experienceCards.map((el, ind) => {
+                    return <ExperienceCard key={ind} title={el.title} organisation={el.organisation} date={el.date}
+                                           place={el.place} showPlace={el.showPlace} label={el.label}/>
+                })}
+
 
                 <StyledSectionTitle>
                     Education
                 </StyledSectionTitle>
 
-                <EducationCard title={'Manager-economist'}
-                               organisation={'Belarusian State University'} date={'2004-2008'}
-                />
-                <EducationCard title={'Teacher of mathematics and computer science'}
-                               organisation={'Mozyr State Pedagogical University'} date={'2001-2006'}
-                               label={'In absentia'}/>
+                {myTheme.state.educationCards.map((el, ind) => {
+                    return <ExperienceCard key={ind} title={el.title} organisation={el.organisation} date={el.date}
+                                           place={el.place} showPlace={el.showPlace} label={el.label}/>
+                })}
 
 
             </StyledSpaAbout>

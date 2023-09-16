@@ -20,7 +20,7 @@ function App() {
                     <Route element={<SpaAbout/>} path='/about'/>
                     <Route element={<SpaSkills/>} path='/skills'/>
                     <Route element={<SpaProjects/>} path='/projects'/>
-                    <Route element={<SpaContacts/>} path='/contacts'/>
+                    <Route element={<SpaContacts/>} path='/contact'/>
                 </Routes>
             </Router>
 

@@ -4,17 +4,10 @@ import {StyledLabel} from "./StyledLabel";
 import {Icon} from "../icon/Icon";
 import {StyledDescription} from "./StyledDescription";
 
-type ExperienceCardPropsType = {
-    title: string,
-    organisation: string,
-    place: string,
-    date: string,
-    label?: string
-}
-
-export const ExperienceCard = ({title, organisation, place, date, label}: ExperienceCardPropsType) => {
+export const ExperienceCard = ({title, organisation, place, date, label, showPlace}: ExperienceCardPropsType) => {
     return (
         <StyledExperienceCard>
+
             <div className="flex-wrapper">
                 <h4>
                     {title}
@@ -26,14 +19,18 @@ export const ExperienceCard = ({title, organisation, place, date, label}: Experi
             <div className="flex-wrapper">
                 <div className="left">
                     <Icon viewBox={'0 0 16 12'} width={'16px'} height={'12px'} iconId={'building'}/>
-                    <StyledDescription>
+                    <StyledDescription showPlace>
                         {organisation}
                     </StyledDescription>
 
-                    <Icon viewBox={'0 0 16 12'} width={'16px'} height={'12px'} iconId={'location'}/>
-                    <StyledDescription>
-                        {place}
-                    </StyledDescription>
+                    {showPlace && <>
+                        <Icon viewBox={'0 0 16 12'} width={'16px'} height={'12px'} iconId={'location'}/>
+                        <StyledDescription>
+                            {place ? place : 'From home'}
+                        </StyledDescription>
+                    </>}
+
+
                 </div>
                 <div className="right">
                     <Icon viewBox={'0 0 16 12'} width={'16px'} height={'12px'} iconId={'calendar'}/>
@@ -49,10 +46,20 @@ export const ExperienceCard = ({title, organisation, place, date, label}: Experi
     )
 }
 
+type ExperienceCardPropsType = {
+    title: string,
+    organisation: string,
+    place?: string,
+    date: string,
+    label?: string,
+    showPlace?: boolean
+}
+
 const StyledExperienceCard = styled.div`
   padding-bottom: 24px;
   border-bottom: 2px solid ${myTheme.colors.description};
   margin-bottom: 38px;
+
 
   h4 {
     color: ${myTheme.colors.text};
@@ -79,10 +86,6 @@ const StyledExperienceCard = styled.div`
       display: flex;
       align-items: center;
       gap: 4px;
-
-      span {
-        width: auto;
-      }
     }
   }
 `
