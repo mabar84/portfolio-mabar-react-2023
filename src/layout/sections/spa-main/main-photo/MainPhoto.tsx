@@ -12,9 +12,9 @@ export const MainPhoto = () => {
     return (
         <StyledMainPhoto>
             <div className=""></div>
-            <img className="profile-photo" src={require(`./../../../../assets/images/${name}-photo.jpg`)}
-                 alt={name}/>
-            {/*<img src={mainPhoto}/>*/}
+            {/*<img className="profile-photo" src={require(`./../../../../assets/images/${name}-photo.jpg`)}*/}
+            {/*     alt={name}/>*/}
+            <img src={mainPhoto}/>
 
             {/*<Icon iconId={'abstract'} height={'444'} width={'444'} viewBox={'0 0 444 444'}/>*/}
         </StyledMainPhoto>
@@ -54,5 +54,6 @@ const StyledMainPhoto = styled.div`
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    object-fit: cover;
   }
 `

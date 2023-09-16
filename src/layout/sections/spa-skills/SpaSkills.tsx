@@ -13,6 +13,8 @@ export const SpaSkills = () => {
             <StyledSectionText>
                 Technologies I’ve been working with recently
             </StyledSectionText>
+
+
         </StyledSectionContainer>
     );
 };
