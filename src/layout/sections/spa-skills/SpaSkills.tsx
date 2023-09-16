@@ -16,7 +16,7 @@ export const SpaSkills = () => {
                 Technologies I’ve been working with recently
             </StyledSectionText>
             <Slider content={myTheme.state.skills}/>
-            <Slider content={myTheme.state.tools}/>
+            {/*<Slider content={myTheme.state.tools}/>*/}
 
         </StyledSectionContainer>
     );

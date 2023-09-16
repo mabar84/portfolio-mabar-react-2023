@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {myTheme} from "../../styles/Theme.styled";
 
 type SliderPropsType = {
     content: string[]
@@ -8,20 +9,89 @@ type SliderPropsType = {
 export const Slider = (props: SliderPropsType) => {
     return (
         <StyledSlider>
-            {props.content.map((el, ind) => {
-                return <img key={ind} src={require(`./../../assets/images/${el.toLowerCase()}.png`)}
-                            title={el} alt={el}/>
-            })}
+            {/*{props.content.map((el, ind) => {*/}
+            {/*    return <img key={ind} src={require(`./../../assets/images/${el.toLowerCase()}.png`)}*/}
+            {/*                title={el} alt={el}/>*/}
+            {/*})}*/}
+            <div className="slide-track">
+                {props.content.map((el, ind) => {
+                    return <img key={ind} src={require(`./../../assets/images/${el.toLowerCase()}.png`)}
+                                title={el} alt={el}/>
+                })}
+                {props.content.map((el, ind) => {
+                    return <img key={ind} src={require(`./../../assets/images/${el.toLowerCase()}.png`)}
+                                title={el} alt={el}/>
+                })}
+            </div>
+
         </StyledSlider>
     );
 };
 
 const StyledSlider = styled.div`
+
+  @-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+
   margin-bottom: 38px;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 1180px;
+
+  &:before, &:after {
+    background: linear-gradient(to right, ${myTheme.colors.background} 0%, rgba(19, 19, 19, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+
+  &::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
+
+  .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
 
   img {
-    width: 100px;
     height: 100px;
+    width: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
     object-fit: cover;
   }
 `
