@@ -28,7 +28,6 @@ export const SpaAbout = () => {
                                            place={el.place} showPlace={el.showPlace} label={el.label}/>
                 })}
 
-
                 <StyledSectionTitle>
                     Education
                 </StyledSectionTitle>
@@ -37,8 +36,7 @@ export const SpaAbout = () => {
                     return <ExperienceCard key={ind} title={el.title} organisation={el.organisation} date={el.date}
                                            place={el.place} showPlace={el.showPlace} label={el.label}/>
                 })}
-
-
+                
             </StyledSpaAbout>
         </StyledSectionContainer>
     );
