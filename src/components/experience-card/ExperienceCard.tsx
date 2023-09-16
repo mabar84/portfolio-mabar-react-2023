@@ -7,7 +7,7 @@ import {StyledDescription} from "./StyledDescription";
 type ExperienceCardPropsType = {
     title: string,
     organisation: string,
-    place: string,
+    place?: string,
     date: string,
     label?: string
 }
@@ -32,7 +32,7 @@ export const ExperienceCard = ({title, organisation, place, date, label}: Experi
 
                     <Icon viewBox={'0 0 16 12'} width={'16px'} height={'12px'} iconId={'location'}/>
                     <StyledDescription>
-                        {place}
+                        {place ? place : 'From home'}
                     </StyledDescription>
                 </div>
                 <div className="right">

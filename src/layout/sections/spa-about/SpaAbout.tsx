@@ -21,21 +21,26 @@ export const SpaAbout = () => {
                 <StyledSectionTitle>
                     Work Experience
                 </StyledSectionTitle>
+                {/*<a href={'https://saharok.info/'}>https://saharok.info/</a>*/}
+                <ExperienceCard title={'Web developer'} organisation={'Local Internet'} date={'Apr 2023 - Jul 2023'}
+                                label={'Project employment'}
+                />
+                <ExperienceCard title={`Layout designer`} organisation={'Design laboratory'}
+                                label={'Project employment'} date={'Dec 2021 - Jan 2023'}/>
+                <ExperienceCard title={'Web developer'} organisation={'Freelance'}
+                                date={'Jun 2023 - present'}/>
 
-                <ExperienceCard title={'layout designer'} organisation={'1'} place={'2'} date={'3'}/>
-                <ExperienceCard title={'layout designer'} organisation={'1'} place={'2'} date={'3'}/>
-                <ExperienceCard title={'layout designer'} organisation={'1'} place={'2'} date={'3'}/>
 
                 <StyledSectionTitle>
                     Education
                 </StyledSectionTitle>
 
                 <EducationCard title={'Manager-economist'}
-                               organisation={'Belarusian State University'} date={'2004-2008'}
+                               organisation={'Belarusian State University'} date={' 2004 - 2008 '} label={'In absentia'}
                 />
                 <EducationCard title={'Teacher of mathematics and computer science'}
-                               organisation={'Mozyr State Pedagogical University'} date={'2001-2006'}
-                               label={'In absentia'}/>
+                               organisation={'Mozyr State Pedagogical University'} date={' 2001 - 2006 '}
+                />
 
 
             </StyledSpaAbout>
