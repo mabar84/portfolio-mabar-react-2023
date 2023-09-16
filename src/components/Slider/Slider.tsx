@@ -1,14 +1,15 @@
 import React from 'react';
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import {myTheme} from "../../styles/Theme.styled";
 
 type SliderPropsType = {
-    content: string[]
+    content: string[],
+    reverse?: boolean
 }
 
 export const Slider = (props: SliderPropsType) => {
     return (
-        <StyledSlider>
+        <StyledSlider reverse={props.reverse}>
             {/*{props.content.map((el, ind) => {*/}
             {/*    return <img key={ind} src={require(`./../../assets/images/${el.toLowerCase()}.png`)}*/}
             {/*                title={el} alt={el}/>*/}
@@ -28,7 +29,7 @@ export const Slider = (props: SliderPropsType) => {
     );
 };
 
-const StyledSlider = styled.div`
+const StyledSlider = styled.div<{ reverse?: boolean }>`
 
   @-webkit-keyframes scroll {
     0% {
@@ -37,7 +38,7 @@ const StyledSlider = styled.div`
     100% {
       transform: translateX(calc(-250px * 7));
     }
-  }
+  };
   @keyframes scroll {
     0% {
       transform: translateX(0);
@@ -47,7 +48,38 @@ const StyledSlider = styled.div`
     }
   }
 
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+
+  ${props => props.reverse && css`
+    @-webkit-keyframes scroll-reverse {
+      0% {
+        transform: translateX(calc(-250px * 7));
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+    @keyframes scroll-reverse {
+      0% {
+        transform: translateX(calc(-250px * 7));
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .slide-track {
+      -webkit-animation: scroll-reverse 40s linear infinite;
+      animation: scroll-reverse 40s linear infinite;
+      display: flex;
+      width: calc(250px * 14);
+    }
+  `}
   height: 100px;
   margin: 0 auto 38px;
   overflow: hidden;
@@ -74,12 +106,6 @@ const StyledSlider = styled.div`
     top: 0;
   }
 
-  .slide-track {
-    -webkit-animation: scroll 40s linear infinite;
-    animation: scroll 40s linear infinite;
-    display: flex;
-    width: calc(250px * 14);
-  }
 
   img {
     height: 100px;

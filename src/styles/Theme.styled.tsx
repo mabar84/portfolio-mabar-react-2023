@@ -78,10 +78,10 @@ export const myTheme = {
             }
         ],
         skills: [
-            'HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'SASS', 'Bootstrap', 'JQuery', 'Storybook'
+            'HTML', 'CSS', 'SASS', 'Bootstrap', 'JavaScript', 'JQuery', 'React', 'Redux', 'Storybook'
         ],
         tools: [
-            'VSCode', 'bibucket', 'Git', 'Github', 'Figma', 'npm', 'Photoshop', 'yarn', 'WebStorm', 'FileZilla'
+            'VSCode', 'WebStorm', 'Git', 'Github', 'bibucket', 'Figma', 'Photoshop', 'npm', 'yarn', 'FileZilla'
         ]
     }
 }
