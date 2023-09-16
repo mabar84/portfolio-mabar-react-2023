@@ -32,29 +32,24 @@ const StyledSlider = styled.div`
 
   @-webkit-keyframes scroll {
     0% {
-      -webkit-transform: translateX(0);
       transform: translateX(0);
     }
     100% {
-      -webkit-transform: translateX(calc(-250px * 7));
       transform: translateX(calc(-250px * 7));
     }
   }
   @keyframes scroll {
     0% {
-      -webkit-transform: translateX(0);
       transform: translateX(0);
     }
     100% {
-      -webkit-transform: translateX(calc(-250px * 7));
       transform: translateX(calc(-250px * 7));
     }
   }
 
-  margin-bottom: 38px;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   height: 100px;
-  margin: auto;
+  margin: 0 auto 38px;
   overflow: hidden;
   position: relative;
   width: 1180px;
@@ -71,7 +66,6 @@ const StyledSlider = styled.div`
   &::after {
     right: 0;
     top: 0;
-    -webkit-transform: rotateZ(180deg);
     transform: rotateZ(180deg);
   }
 

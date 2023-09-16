@@ -3,18 +3,13 @@ import styled from "styled-components";
 import mainPhoto from "../../../../assets/images/my-photo.jpg";
 import abstract from "../../../../assets/images/abstract.svg";
 import {myTheme} from "../../../../styles/Theme.styled";
-import {Icon} from "../../../../components/icon/Icon";
-import iconsSprite from "../../../../assets/images/icons-sprite.svg";
-
 
 export const MainPhoto = () => {
     return (
         <StyledMainPhoto>
             <div></div>
-            {/*<img className="profile-photo" src={require(`./../../../../assets/images/${name}-photo.jpg`)}*/}
-            {/*     alt={name}/>*/}
-            <img src={mainPhoto}/>
-
+            <img src={mainPhoto} alt={'me'}/>
+            `
             {/*<Icon iconId={'abstract'} height={'444'} width={'444'} viewBox={'0 0 444 444'}/>*/}
         </StyledMainPhoto>
 
