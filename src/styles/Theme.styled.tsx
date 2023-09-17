@@ -13,11 +13,11 @@ export const myTheme = {
 
     state: {
         navItems: [
-            ['Home', ''],
+            ['Home', 'home'],
             ['About', 'about'],
             ['Tech Stack', 'skills'],
             ['Projects', 'projects'],
-            ['Contact', 'contact'],
+            ['Contacts', 'contacts'],
         ],
         socialMediaItems: [
             {
@@ -30,7 +30,7 @@ export const myTheme = {
             },
             {
                 iconId: 'soc-linkedin',
-                href: "#"
+                href: "https://www.linkedin.com/in/%D0%BC%D0%B8%D1%85%D0%B0%D0%B8%D0%BB-%D0%B1%D0%B0%D1%80%D0%B0%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9-8121ab287/"
             },
         ],
         experienceCards: [
@@ -81,7 +81,7 @@ export const myTheme = {
             'HTML', 'CSS', 'SASS', 'Bootstrap', 'JavaScript', 'JQuery', 'React', 'Redux', 'Storybook'
         ],
         tools: [
-            'VSCode', 'WebStorm', 'Git', 'Github', 'bibucket', 'Figma', 'Photoshop', 'npm', 'yarn', 'FileZilla'
+            'VSCode', 'WebStorm', 'Git', 'Github', 'bibucket', 'Figma', 'Photoshop', 'yarn', 'FileZilla'
         ]
     }
 }

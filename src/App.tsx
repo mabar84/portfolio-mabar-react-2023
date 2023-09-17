@@ -19,7 +19,7 @@ function App() {
                     <Route element={<SpaAbout/>} path='/about'/>
                     <Route element={<SpaSkills/>} path='/skills'/>
                     <Route element={<SpaProjects/>} path='/projects'/>
-                    <Route element={<SpaContacts/>} path='/contact'/>
+                    <Route element={<SpaContacts/>} path='/contacts'/>
                 </Routes>
             </Router>
         </div>

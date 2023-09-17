@@ -36,7 +36,8 @@ const StyledSlider = styled.div<{ reverse?: boolean }>`
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-250px * 7));
+      //transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-1800px));
     }
   };
   @keyframes scroll {
@@ -44,21 +45,24 @@ const StyledSlider = styled.div<{ reverse?: boolean }>`
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-250px * 7));
+      //transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-1800px));
     }
   }
 
   .slide-track {
-    -webkit-animation: scroll 40s linear infinite;
-    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 36s linear infinite;
+    animation: scroll 36s linear infinite;
     display: flex;
-    width: calc(250px * 14);
+    //width: calc(250px * 14);
+    width: calc(3600px);
   }
 
   ${props => props.reverse && css`
     @-webkit-keyframes scroll-reverse {
       0% {
-        transform: translateX(calc(-250px * 7));
+        //transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-1800px));
       }
       100% {
         transform: translateX(0);
@@ -66,7 +70,8 @@ const StyledSlider = styled.div<{ reverse?: boolean }>`
     }
     @keyframes scroll-reverse {
       0% {
-        transform: translateX(calc(-250px * 7));
+        //transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-1800px));
       }
       100% {
         transform: translateX(0);
@@ -74,17 +79,17 @@ const StyledSlider = styled.div<{ reverse?: boolean }>`
     }
 
     .slide-track {
-      -webkit-animation: scroll-reverse 40s linear infinite;
-      animation: scroll-reverse 40s linear infinite;
+      -webkit-animation: scroll-reverse 36s linear infinite;
+      animation: scroll-reverse 36s linear infinite;
       display: flex;
-      width: calc(250px * 14);
+      //width: calc(250px * 14);
+      width: 1800px;
     }
   `}
   height: 100px;
   margin: 0 auto 38px;
   overflow: hidden;
   position: relative;
-  width: 1180px;
 
   &:before, &:after {
     background: linear-gradient(to right, ${myTheme.colors.background} 0%, rgba(19, 19, 19, 0) 100%);
@@ -96,7 +101,7 @@ const StyledSlider = styled.div<{ reverse?: boolean }>`
   }
 
   &::after {
-    right: 0;
+    right: -2px;
     top: 0;
     transform: rotateZ(180deg);
   }
