@@ -38,5 +38,5 @@ export const SpaAbout = () => {
 };
 
 const StyledSpaAbout = styled.section`
-  max-width: 700px;
+ 
 `

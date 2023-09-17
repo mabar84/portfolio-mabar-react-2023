@@ -1,0 +1,45 @@
+.header__button-modal-button-text {
+    text-align: justify;
+    white-space: nowrap;
+}
+.error {
+    color: red;
+}
+.feedback-box__comments-title {
+    width: 100%;
+}
+.feedback-box__comments-content--text{
+    width: 100%;
+}
+.comment-right {
+    margin-right: 0;
+}
+.center__text {
+    width: 100%;
+    text-align: center;
+}
+@media screen {
+    .course-hidden {
+        display: none!important;
+    }
+    .hidden {
+        display: none!important;
+    }
+}
+.normalize:hover {
+    color:black!important;
+    text-decoration:none!important;
+}
+.filter-tooltip-label:hover{
+    cursor: pointer;
+}
+div #paginationCourse {
+    min-height: 100px;
+}
+span.grey-update {
+    color: grey;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 10px;
+}
+

@@ -1,0 +1,62 @@
+[
+  {
+    "rooms": "3",
+    "project": "Никольский",
+    "area": "34.6 - 36.1",
+    "floor": "9",
+    "housing": "ГП-5 с.3",
+    "price": "13 347 688",
+    "mounthly": "62 641",
+    "src": "img/miniature-34.png"
+  },
+  {
+    "rooms": "2",
+    "project": "Никольский",
+    "area": "28.6 - 29.1",
+    "floor": "5",
+    "housing": "ГП-5 с.3",
+    "price": "23 347 688",
+    "mounthly": "52 641",
+    "src": "img/miniature-28.png"
+  },
+  {
+    "rooms": "1",
+    "project": "Никольский",
+    "area": "23.6 - 26.1",
+    "floor": "6",
+    "housing": "ГП-5 с.3",
+    "price": "19 347 688",
+    "mounthly": "42 641",
+    "src": "img/miniature-23.png"
+  },
+  {
+    "rooms": "4",
+    "project": "Никольский",
+    "area": "59.6 - 65.1",
+    "floor": "7",
+    "housing": "ГП-5 с.3",
+    "price": "40 347 688",
+    "mounthly": "80 641",
+    "src": "img/miniature-59.png"
+  },
+  {
+    "rooms": "5",
+    "project": "Никольский",
+    "area": "78.6 - 88.1",
+    "floor": "8",
+    "housing": "ГП-5 с.3",
+    "price": "44 000 000",
+    "mounthly": "99 641",
+    "src": "img/miniature-78.png"
+  },
+  {
+    "rooms": "СТ",
+    "project": "Никольский",
+    "area": "18.6 - 28.1",
+    "floor": "2",
+    "housing": "ГП-5 с.3",
+    "price": "3 000 000",
+    "mounthly": "11 641",
+    "src": "img/miniature-78.png"
+  }
+]

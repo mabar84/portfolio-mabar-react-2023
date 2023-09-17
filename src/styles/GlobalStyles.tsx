@@ -31,13 +31,14 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     ${myTheme.media.less1080} {
-      max-width: calc(100vw - 40px);
+      max-width: calc(100vw - 60px);
+      margin: 0 30px;
     }
 
     ${myTheme.media.less640} {
       max-width: calc(100vw - 20px);
+      margin: 0 10px;
     }
-
   }
 
   a {

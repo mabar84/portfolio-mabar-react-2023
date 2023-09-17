@@ -9,7 +9,6 @@ export const SpaContacts = () => {
                 Contacts
             </StyledSectionTitle>
         </StyledSpaContacts>
-
     );
 };
 const StyledSpaContacts = styled.section``

@@ -1,0 +1,67 @@
+.banners {
+    width: 964px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    box-shadow: 6px 6px 25px #e7e7e7;
+    border-radius: 10px;
+    .title {
+        margin-bottom: 16px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 140%;
+        text-transform: uppercase;
+        text-align: center;
+        .amount {
+            color: $red;
+        }
+    }
+    .icon-container {
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            width: auto;
+            height: 50px;
+        }
+    }
+}
+@media (max-width: 1150px) {
+    .banners {
+        width: 754px;
+        padding: 20px 10px;
+        .title {
+            font-size: 20px;
+        }
+    }
+}
+@media (max-width: 800px) {
+    .banners {
+        width: calc(100% - 40px);
+        padding: 20px 12px;
+        .title {
+            font-size: 16px;
+        }
+        .icon-container {
+            flex-wrap: wrap;
+            gap: 19px;
+            .logo {
+                height: 40px;
+                &:nth-child(1) {
+                    order: 2;
+                }
+                &:nth-child(2) {
+                    order: 5;
+                }
+                &:nth-child(3) {
+                    order: 4;
+                }
+                &:nth-child(4) {
+                    order: 1;
+                }
+                &:nth-child(5) {
+                    order: 3;
+                }
+            }
+        }
+    }
+}

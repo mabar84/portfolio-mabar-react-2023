@@ -1,0 +1,184 @@
+.money-order {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 30px 0 30px 123px;
+    background: rgba(0, 117, 255, 0.02);
+    position: relative;
+    .title {
+        margin-bottom: 20px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        text-transform: uppercase;
+    }
+    .wrapper {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+    .text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        .amount {
+            font-weight: 600;
+            color: $red;
+        }
+        .more {
+            display: block;
+            color: $blue;
+            cursor: pointer;
+        }
+    }
+    .input {
+        width: 720px;
+        padding: 16px 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        background: #ffffff;
+        border: 0.5px solid #cdcdcd;
+        border-radius: 10px;
+        &::placeholder {
+            color: $grey;
+        }
+        &.error {
+            border: 0.5px solid $error;
+        }
+    }
+    .additional-inputs {
+        margin-bottom: 20px;
+        .input {
+            margin-bottom: 20px;
+        }
+    }
+    .other {
+        width: max-content;
+        margin-bottom: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #cdcdcd;
+        cursor: pointer;
+        &.active {
+            color: $blue;
+        }
+    }
+    .text-error {
+        display: none;
+        margin-top: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: $red;
+    }
+    .message {
+        position: absolute;
+        right: 55px;
+        bottom: 30px;
+        &-img {
+            width: 108px;
+            height: 108px;
+        }
+    }
+    &.error {
+        .input {
+            border: 0.5px solid $error;
+        }
+    }
+}
+@media (max-width: 1170px) {
+    .money-order {
+        width: 100%;
+        padding: 20px 40px;
+        .message {
+            right: 40px;
+            bottom: 22px;
+        }
+    }
+}
+@media (max-width: 1150px) {
+    .money-order {
+        width: 100%;
+        padding: 20px 40px;
+        .content {
+            width: 754px;
+            margin: 0 auto;
+        }
+        .wrapper {
+            gap: 14px;
+        }
+        .input {
+            width: 550px;
+            font-size: 14px;
+        }
+        .send-moderation {
+            font-family: "Montserrat";
+            padding: 16px 40px;
+            font-size: 14px;
+            line-height: 140%;
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+}
+@media (max-width: 800px) {
+    .money-order {
+        width: 100%;
+        padding: 20px 20px 84px;
+        .content {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .title {
+            margin-bottom: 10px;
+            font-size: 18px;
+            line-height: 140%;
+        }
+        .wrapper {
+            margin-bottom: 14px;
+            gap: 6px;
+            flex-direction: column;
+            align-items: start;
+        }
+        .text {
+            font-size: 14px;
+            line-height: 17px;
+            .more {
+                display: inline;
+            }
+        }
+        .input {
+            padding: 14px 10px;
+            width: 335px;
+            font-size: 12px;
+        }
+        .other {
+            font-size: 14px;
+        }
+        .additional-inputs {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0px;
+        }
+        .text-error {
+            margin-top: 6px;
+            font-size: 12px;
+            line-height: 140%;
+        }
+        .message {
+            right: 20px;
+            bottom: 20px;
+            &-img {
+                width: 44px;
+                height: 44px;
+            }
+        }
+    }
+}

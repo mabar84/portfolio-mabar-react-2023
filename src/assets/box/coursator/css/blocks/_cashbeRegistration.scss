@@ -1,0 +1,108 @@
+.cashbe-registration {
+    width: 577px;
+    padding: 39px 37px;
+    position: absolute;
+    z-index: 1;
+    right: 165px;
+    top: 150px;
+    background: #ffffff;
+    box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .img {
+        width: 162px;
+        height: 34px;
+        margin-bottom: 10px;
+    }
+    .subtitle {
+        margin-bottom: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .title {
+        margin-bottom: 10px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 150%;
+        color: #23315d;
+        text-transform: none;
+    }
+    .text {
+        margin-bottom: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        .red {
+            color: $red;
+        }
+    }
+    .links {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 160%;
+    }
+    .link {
+        color: $blue;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 160%;
+    }
+    .close {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+}
+@media (max-width: 1150px) {
+    .cashbe-registration {
+        right: 62px;
+        top: 152px;
+    }
+}
+@media (max-width: 800px) {
+    .cashbe-registration {
+        width: 335px;
+        padding: 20px 10px;
+        top: 167px;
+        right: 50%;
+        transform: translateX(50%);
+        .subtitle {
+            margin-bottom: 10px;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+        }
+        .title {
+            margin-bottom: 10px;
+            font-size: 12px;
+            line-height: 150%;
+        }
+        .text {
+            margin-bottom: 11px;
+            font-size: 12px;
+            line-height: 140%;
+        }
+        .links {
+            font-size: 10px;
+            line-height: 120%;
+        }
+        .link {
+            font-size: 10px;
+            line-height: 120%;
+        }
+        .close {
+            top: 10px;
+            right: 10px;
+        }
+    }
+}

@@ -87,17 +87,76 @@ export const myTheme = {
         ],
         projectsCards: [
             {
+                name: 'schooltask',
+                title: 'Homework done!',
+                text: 'Full layout of the currently working site',
+                link: 'https://schooltask.ru/'
+            },
+            {
+                name: 'yusar',
+                title: 'Let\'s check your health!',
+                text: 'Scroll effects, JQuery, HTML, CSS',
+                link: 'https://mabar.ru/box/yusar/'
+            },
+            {
+                name: 'track-global',
+                title: 'Find your parcel!',
+                text: 'Accurate tracking of postal items',
+                link: 'https://track.global/ru'
+            },
+            {
+                name: 'universal',
+                title: 'Let\'s read IT news!',
+                text: 'Layout, sliders, tabs, forms',
+                link: 'https://mabar.ru/box/universal/'
+            },
+            {
                 name: 'a200',
                 title: 'Let\'s choose a car!',
                 text: 'About mercedes-benz a200',
-                link: 'https://mabar.ru/projects/a200/',
-
+                link: 'https://mabar.ru/box/a200/'
+            },
+            {
+                name: 'rb-courses',
+                title: 'Choose the best IT courses!',
+                text: 'Layout of several pages of a currently working website',
+                link: 'https://rb.ru/kursy/school/skillbox/'
+            },
+            {
+                name: 'cars',
+                title: 'Need for JS!',
+                text: 'Racing toy on CSS, HTML, JS',
+                link: 'https://mabar.ru/box/cars/'
             },
             {
                 name: 'tourplan',
                 title: 'Let\'s have a good rest!',
-                text: 'About booking',
-                link: 'https://mabar.ru/projects/a200/'
+                text: 'About booking, HTML, CSS, JS, some PHP for feedback form',
+                link: 'https://mabar.ru/box/tourplan/'
+            },
+            {
+                name: 'babor',
+                title: 'Let\'s choose cosmetics!',
+                text: 'Small page with video',
+                link: 'https://mabar.ru/box/babor/'
+            },
+            {
+                name: 'bookstore',
+                title: 'Let\'s read along the way!',
+                text: 'Bookstore website',
+                link: 'https://mabar.ru/box/bookstore/'
+            },
+            {
+                name: 'urok-pw',
+                title: 'Test your knowledge!',
+                text: 'Transferring the layout of an existing website to a new engine',
+                link: 'https://mabar.ru/box/urok-pw/'
+            },
+            {
+                name: 'sarabi',
+                title: 'Let\'s book a ticket',
+                text: 'Making a calendar and calculator for the main page of the finished project',
+                link: 'https://mabar.ru/box/sarabi/'
             },
         ]
     }

@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="description" content="description" />
+    <meta name="keywords" content="keywords" />
+    <link rel="shortcut icon" href="images/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="images/favicons/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicons/favicon.webp" type="image/webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/mabar.css" />
+    <title>Coursator</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header_inner">
+        <div class="container d-f ai-c jc-sb">
+          <a class="header__logo d-f ai-c" href="#"><img class="header__logo-img" src="images/content/logo.svg" alt="" /></a>
+          <nav class="header-nav d-f ai-c" data-evnt-hdr-nv="">
+            <div class="header-nav-lang">
+              <div class="top-courses__head d-f ai-c jc-sb">
+                <div class="top-courses__head-select select-input" data-select-input="">
+                  <button class="select-input__button d-f ai-c" data-evnt-slct-bttn="">
+                    <img src="images/icons/us.png" alt="" data-evnt-slct-bttn-image="" /><span class="select-input__button-text" data-evnt-slct-bttn-txt=""
+                      >EN</span
+                    ><img class="select-input__button-icon icon-size" src="images/icons/arrow-down-black.svg" alt="" loading="lazy" />
+                  </button>
+                  <div class="select-input__modal">
+                    <button class="select-input__modal-element active" data-select-input-element="1">
+                      <img src="images/icons/us.png" alt="" /><span>EN</span></button
+                    ><button class="select-input__modal-element" data-select-input-element="2"><img src="images/icons/ru.png" alt="" /><span>RU</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__links d-f">
+              <a class="header__links-element hvr-lnk" href="#">Тест на профессию</a><a class="header__links-element hvr-lnk" href="#">Акции</a
+              ><a class="header__links-element hvr-lnk" href="#">Отзывы</a>
+            </div>
+            <div class="header__button" data-evnt-hdr-btn="">
+              <button class="header__button-head d-f ai-c" data-evnt-hdr-btn-elmnt="">
+                <span class="header__button-head-text">Все курсы</span
+                ><img class="header__button-head-icon icon-size" src="images/icons/arrow-up-black.svg" alt="" loading="lazy" />
+              </button>
+              <div class="header__button-modal d-f" data-evnt-hdr-btn-mdl="">
+                <div class="header__button-modal-left" data-evnt-hdr-btn-mdl-innr="">
+                  <button class="header__button-modal-button d-f ai-c jc-sb hvr-lnk" data-number-nav="1">
+                    <span class="header__button-modal-button-text">Программирование</span
+                    ><svg class="header__button-modal-button-icon" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 7.06L3.05333 4L0 0.94L0.94 4.76837e-07L4.94 4L0.94 8L0 7.06Z" fill="#0075FF"></path>
+                    </svg></button
+                  ><button class="header__button-modal-button d-f ai-c jc-sb hvr-lnk" data-number-nav="2">
+                    <span class="header__button-modal-button-text">Управление</span
+                    ><svg class="header__button-modal-button-icon" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 7.06L3.05333 4L0 0.94L0.94 4.76837e-07L4.94 4L0.94 8L0 7.06Z" fill="#0075FF"></path>
+                    </svg></button
+                  ><button class="header__button-modal-button d-f ai-c jc-sb hvr-lnk" data-number-nav="3">
+                    <span class="header__button-modal-button-text">Дизайн</span
+                    ><svg class="header__button-modal-button-icon" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 7.06L3.05333 4L0 0.94L0.94 4.76837e-07L4.94 4L0.94 8L0 7.06Z" fill="#0075FF"></path>
+                    </svg></button
+                  ><button class="header__button-modal-button d-f ai-c jc-sb hvr-lnk" data-number-nav="4">
+                    <span class="header__button-modal-button-text">Маркетинг</span
+                    ><svg class="header__button-modal-button-icon" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 7.06L3.05333 4L0 0.94L0.94 4.76837e-07L4.94 4L0.94 8L0 7.06Z" fill="#0075FF"></path>
+                    </svg></button
+                  ><button class="header__button-modal-button d-f ai-c jc-sb hvr-lnk" data-number-nav="5">
+                    <span class="header__button-modal-button-text">Аналитика</span
+                    ><svg class="header__button-modal-button-icon" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 7.06L3.05333 4L0 0.94L0.94 4.76837e-07L4.94 4L0.94 8L0 7.06Z" fill="#0075FF"></path>
+                    </svg></button
+                  ><button class="header__button-modal-button d-f ai-c jc-sb hvr-lnk" data-number-nav="6">
+                    <span class="header__button-modal-button-text">Создание контента</span
+                    ><svg class="header__button-modal-button-icon" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 7.06L3.05333 4L0 0.94L0.94 4.76837e-07L4.94 4L0.94 8L0 7.06Z" fill="#0075FF"></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="header__button-modal-right" data-number-modal="1">
+                  <button class="header__button-modal-right-back d-f ai-c" data-evnt-hdr-btn-bck="data-evnt-hdr-btn-bck">
+                    <img class="header__button-modal-right-back-icon icon-size" src="images/icons/arrow-left-blue.svg" alt="" loading="lazy" /><span
+                      class="header__button-modal-right-back-text"
+                      >Назад</span
+                    >
+                  </button>
+                  <div class="header__button-modal-right-inner">
+                    <a class="header__button-modal-link hvr-lnk" href="#">SMM-продвижение 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Интернет-маркетинг 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Маркетинговая аналитика 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Копирайтинг 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Web-аналитика 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контент-маркетинг 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Таргетированная реклама 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Руководство маркетингом 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SEO-продвижение 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение в Instagram 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контекстная реклама 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">PR-менеджмент 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Бренд-менеджмент 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение видео 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SERM и репутация 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Создание лендингов 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Реклама у блогеров 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">CRM и email-маркетинг 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Мессенджер-маркетинг и чат-боты 1</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Развитие креативного мышления 1</a>
+                  </div>
+                </div>
+                <div class="header__button-modal-right" data-number-modal="2">
+                  <button class="header__button-modal-right-back d-f ai-c" data-evnt-hdr-btn-bck="data-evnt-hdr-btn-bck">
+                    <img class="header__button-modal-right-back-icon icon-size" src="images/icons/arrow-left-blue.svg" alt="" loading="lazy" /><span
+                      class="header__button-modal-right-back-text"
+                      >Назад</span
+                    >
+                  </button>
+                  <div class="header__button-modal-right-inner">
+                    <a class="header__button-modal-link hvr-lnk" href="#">SMM-продвижение 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Интернет-маркетинг 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Маркетинговая аналитика 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Копирайтинг 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Web-аналитика 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контент-маркетинг 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Таргетированная реклама 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Руководство маркетингом 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SEO-продвижение 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение в Instagram 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контекстная реклама 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">PR-менеджмент 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Бренд-менеджмент 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение видео 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SERM и репутация 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Создание лендингов 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Реклама у блогеров 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">CRM и email-маркетинг 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Мессенджер-маркетинг и чат-боты 2</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Развитие креативного мышления 2</a>
+                  </div>
+                </div>
+                <div class="header__button-modal-right" data-number-modal="3">
+                  <button class="header__button-modal-right-back d-f ai-c" data-evnt-hdr-btn-bck="data-evnt-hdr-btn-bck">
+                    <img class="header__button-modal-right-back-icon icon-size" src="images/icons/arrow-left-blue.svg" alt="" loading="lazy" /><span
+                      class="header__button-modal-right-back-text"
+                      >Назад</span
+                    >
+                  </button>
+                  <div class="header__button-modal-right-inner">
+                    <a class="header__button-modal-link hvr-lnk" href="#">SMM-продвижение 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Интернет-маркетинг 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Маркетинговая аналитика 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Копирайтинг 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Web-аналитика 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контент-маркетинг 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Таргетированная реклама 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Руководство маркетингом 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SEO-продвижение 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение в Instagram 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контекстная реклама 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">PR-менеджмент 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Бренд-менеджмент 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение видео 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SERM и репутация 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Создание лендингов 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Реклама у блогеров 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">CRM и email-маркетинг 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Мессенджер-маркетинг и чат-боты 3</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Развитие креативного мышления 3</a>
+                  </div>
+                </div>
+                <div class="header__button-modal-right" data-number-modal="4">
+                  <button class="header__button-modal-right-back d-f ai-c" data-evnt-hdr-btn-bck="data-evnt-hdr-btn-bck">
+                    <img class="header__button-modal-right-back-icon icon-size" src="images/icons/arrow-left-blue.svg" alt="" loading="lazy" /><span
+                      class="header__button-modal-right-back-text"
+                      >Назад</span
+                    >
+                  </button>
+                  <div class="header__button-modal-right-inner">
+                    <a class="header__button-modal-link hvr-lnk" href="#">SMM-продвижение 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Интернет-маркетинг 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Маркетинговая аналитика 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Копирайтинг 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Web-аналитика 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контент-маркетинг 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Таргетированная реклама 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Руководство маркетингом 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SEO-продвижение 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение в Instagram 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контекстная реклама 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">PR-менеджмент 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Бренд-менеджмент 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение видео 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SERM и репутация 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Создание лендингов 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Реклама у блогеров 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">CRM и email-маркетинг 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Мессенджер-маркетинг и чат-боты 4</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Развитие креативного мышления 4</a>
+                  </div>
+                </div>
+                <div class="header__button-modal-right" data-number-modal="5">
+                  <button class="header__button-modal-right-back d-f ai-c" data-evnt-hdr-btn-bck="data-evnt-hdr-btn-bck">
+                    <img class="header__button-modal-right-back-icon icon-size" src="images/icons/arrow-left-blue.svg" alt="" loading="lazy" /><span
+                      class="header__button-modal-right-back-text"
+                      >Назад</span
+                    >
+                  </button>
+                  <div class="header__button-modal-right-inner">
+                    <a class="header__button-modal-link hvr-lnk" href="#">SMM-продвижение 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Интернет-маркетинг 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Маркетинговая аналитика 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Копирайтинг 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Web-аналитика 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контент-маркетинг 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Таргетированная реклама 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Руководство маркетингом 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SEO-продвижение 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение в Instagram 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контекстная реклама 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">PR-менеджмент 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Бренд-менеджмент 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение видео 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SERM и репутация 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Создание лендингов 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Реклама у блогеров 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">CRM и email-маркетинг 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Мессенджер-маркетинг и чат-боты 5</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Развитие креативного мышления 5</a>
+                  </div>
+                </div>
+                <div class="header__button-modal-right" data-number-modal="6">
+                  <button class="header__button-modal-right-back d-f ai-c" data-evnt-hdr-btn-bck="data-evnt-hdr-btn-bck">
+                    <img class="header__button-modal-right-back-icon icon-size" src="images/icons/arrow-left-blue.svg" alt="" loading="lazy" /><span
+                      class="header__button-modal-right-back-text"
+                      >Назад</span
+                    >
+                  </button>
+                  <div class="header__button-modal-right-inner">
+                    <a class="header__button-modal-link hvr-lnk" href="#">SMM-продвижение 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Интернет-маркетинг 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Маркетинговая аналитика 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Копирайтинг 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Web-аналитика 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контент-маркетинг 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Таргетированная реклама 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Руководство маркетингом 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SEO-продвижение 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение в Instagram 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Контекстная реклама 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">PR-менеджмент 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Бренд-менеджмент 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Продвижение видео 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">SERM и репутация 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Создание лендингов 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Реклама у блогеров 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">CRM и email-маркетинг 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Мессенджер-маркетинг и чат-боты 6</a
+                    ><a class="header__button-modal-link hvr-lnk" href="#">Развитие креативного мышления 6</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <button class="burger flex-column jc-sb" data-evnt-brgr="">
+            <span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"> </span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <button class="button-up d-f ai-c hvr-lnk" data-event-ftr-up="">
+      <span class="button-up__text">В начало</span><img class="button-up__icon icon-size" src="images/icons/button-up.svg" alt="" loading="lazy" />
+    </button>
+    <section class="breadcrumbs">
+      <div class="container grid ai-c">
+        <a class="breadcrumbs__element hvr-lnk" href="#">Главная</a
+        ><img class="breadcrumbs__icon" src="images/icons/arrow-right-blue.svg" alt="" loading="lazy" />
+        <span class="breadcrumbs__element">Обзор</span>
+        <a href="#" class="breadcrumbs-link">Есть вопросы? Свяжитесь с нами!</a>
+      </div>
+    </section>
+
+    <main class="coursator container">
+      <section id="popUpCourse" class="popUpCourse">
+        <div class="window">
+          <div id="close-popUpCourse" class="close hidden"></div>
+          <h3 class="title">
+            ДАРИМ
+            <span class="amount">500₽</span>
+            за обзор на курс
+          </h3>
+          <div class="content">
+            <div class="custom-select custom-select-school">
+              <img src="./images/coursator/arrow-down.svg" alt="↓" class="arrow" />
+              <div class="select-selected">Выберите школу</div>
+              <div class="select-items">
+                <div class="select-item" data-value="1">Алгоритмика</div>
+                <div class="select-item" data-value="2">Нетология</div>
+                <div class="select-item" data-value="3">Умскул</div>
+                <div class="select-item" data-value="4">Фоксфорд</div>
+                <div class="select-item" data-value="5">ЯндексПрактикум</div>
+                <div class="select-item" data-value="6">Contented</div>
+                <div class="select-item" data-value="7">SkillBox</div>
+                <div class="select-item" data-value="8">Академия "Шаг"</div>
+                <div class="select-item" data-value="9">Гло-Академия</div>
+              </div>
+            </div>
+
+            <div class="custom-select custom-select-course disabled">
+              <img src="./images/coursator/arrow-down.svg" alt="↓" class="arrow" />
+              <div class="select-selected">Выберите курс</div>
+              <div class="select-items">
+                <div class="select-item" data-value="1">Аналитика</div>
+                <div class="select-item" data-value="2">Бизнес и финансы</div>
+                <div class="select-item" data-value="3">Детям</div>
+                <div class="select-item" data-value="4">Дизайн</div>
+                <div class="select-item" data-value="5">Иностранные языки</div>
+                <div class="select-item" data-value="6">Маркетинг</div>
+                <div class="select-item" data-value="7">Кройки и шитья</div>
+                <div class="select-item" data-value="8">Валют</div>
+                <div class="select-item" data-value="9">Успешного успеха</div>
+              </div>
+            </div>
+
+            <span class="question">Не нашли курс в списке? Введите самостоятельно.</span>
+
+            <div class="course-name_wrapper">
+              <input type="text" id="input-field" class="course-name" maxlength="64" />
+              <ul id="list" class="list"></ul>
+            </div>
+
+            <!-- <div class="course-name_wrapper_phantom"></div> -->
+
+            <button class="button" id="want500">
+              <span>Хочу 500₽ за обзор</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="promo">
+        <h2 class="title">
+          <span> Расскажите о вашем опыте с&nbsp;курсом </span>
+          <a href="#" class="link">Есть вопросы? Свяжитесь с нами!</a>
+        </h2>
+        <h2 id="course-from-popup" class="title title_blue">Дизайнер интерьера</h2>
+        <p class="change">Изменить курс</p>
+        <div class="text">
+          <p class="item">Мы заботимся о наших клиентах и будем благодарны, если вы напишите качественный обзор на курс.</p>
+          <p class="item item_strong">Это поможет нам:</p>
+          <p class="item item_flex">
+            <img src="images/coursator/IconCheck.svg" alt="ok" class="check" />
+            <img src="images/coursator/IconCheckBlue.svg" alt="ok" class="check check_blue" />
+            <span> Улучшить продукт </span>
+          </p>
+          <p class="item item_flex">
+            <img src="images/coursator/IconCheck.svg" alt="ok" class="check" />
+            <img src="images/coursator/IconCheckBlue.svg" alt="ok" class="check check_blue" />
+            <span> Принять решение о приобретении курса другим клиентам, которые планируют улучшить свои знания. </span>
+          </p>
+        </div>
+        <img class="img" src="./images/coursator/promo-mobile.png" alt="img" />
+      </section>
+
+      <section class="banners" id="anchor">
+        <h3 class="title">
+          Оставьте отзыв и получите
+          <span class="amount">500₽</span>
+          удобным способом
+        </h3>
+        <div class="icon-container">
+          <img src="images/coursator/IconUmoney.svg" alt="icon" class="logo" />
+          <img src="images/coursator/IconQiwi.svg" alt="icon" class="logo" />
+          <img src="images/coursator/IconCashbe.svg" alt="icon" class="logo" />
+          <img src="images/coursator/IconVisa.svg" alt="icon" class="logo" />
+          <img src="images/coursator/IconMasterCard.svg" alt="icon" class="logo" />
+        </div>
+      </section>
+      <section class="review">
+        <h3 class="title">Приступим к обзору</h3>
+
+        <div class="inputs-wrapper">
+          <input type="text" class="input" id="name-field" placeholder="Имя*" />
+          <div class="mail">
+            <input type="text" class="input" id="email-field" placeholder="Электронная почта*" />
+            <p class="subtext">Используется только для связи с автором</p>
+          </div>
+        </div>
+
+        <div class="ratings">
+          <div class="rate-wrapper">
+            <h3 class="title">Cтоимость*</h3>
+            <div id="price" class="rate">
+              <input type="radio" class="star15" id="star15" name="rate1" value="5" />
+              <label for="star15" title="text"></label>
+              <input type="radio" class="star14" id="star14" name="rate1" value="4" />
+              <label for="star14" title="text"></label>
+              <input type="radio" class="star13" id="star13" name="rate1" value="3" />
+              <label for="star13" title="text"></label>
+              <input type="radio" class="star12" id="star12" name="rate1" value="2" />
+              <label for="star12" title="text"></label>
+              <input type="radio" class="star11" id="star11" name="rate1" value="1" />
+              <label for="star11" title="text"></label>
+            </div>
+          </div>
+          <div class="rate-wrapper">
+            <h3 class="title">Подача материала*</h3>
+            <div id="explanation" class="rate">
+              <input type="radio" class="star25" id="star25" name="rate2" value="5" />
+              <label for="star25" title="text"></label>
+              <input type="radio" class="star24" id="star24" name="rate2" value="4" />
+              <label for="star24" title="text"></label>
+              <input type="radio" class="star23" id="star23" name="rate2" value="3" />
+              <label for="star23" title="text"></label>
+              <input type="radio" class="star22" id="star22" name="rate2" value="2" />
+              <label for="star22" title="text"></label>
+              <input type="radio" class="star21" id="star21" name="rate2" value="1" />
+              <label for="star21" title="text"></label>
+            </div>
+          </div>
+          <div class="rate-wrapper">
+            <h3 class="title">Программа обучения*</h3>
+            <div id="program" class="rate">
+              <input type="radio" class="star35" id="star35" name="rate3" value="5" />
+              <label for="star35" title="text"></label>
+              <input type="radio" class="star34" id="star34" name="rate3" value="4" />
+              <label for="star34" title="text"></label>
+              <input type="radio" class="star33" id="star33" name="rate3" value="3" />
+              <label for="star33" title="text"></label>
+              <input type="radio" class="star32" id="star32" name="rate3" value="2" />
+              <label for="star32" title="text"></label>
+              <input type="radio" class="star31" id="star31" name="rate3" value="1" />
+              <label for="star31" title="text"></label>
+            </div>
+          </div>
+          <div class="rate-wrapper">
+            <h3 class="title">Уровень организации*</h3>
+            <div id="organization" class="rate">
+              <input type="radio" class="star45" id="star45" name="rate4" value="5" />
+              <label for="star45" title="text"></label>
+              <input type="radio" class="star44" id="star44" name="rate4" value="4" />
+              <label for="star44" title="text"></label>
+              <input type="radio" class="star43" id="star43" name="rate4" value="3" />
+              <label for="star43" title="text"></label>
+              <input type="radio" class="star42" id="star42" name="rate4" value="2" />
+              <label for="star42" title="text"></label>
+              <input type="radio" class="star41" id="star41" name="rate4" value="1" />
+              <label for="star41" title="text"></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="plus-minus-wrapper">
+          <div class="item">
+            <div class="grade">
+              <img src="./images/coursator/plus.svg" alt="+" class="icon" />
+              <p class="text">Плюсы</p>
+            </div>
+            <textarea
+              name="plus"
+              id="plus-field"
+              cols="30"
+              rows="10"
+              class="textarea"
+              placeholder="Напишите несколько плюсов по пунктам (если&nbsp;они&nbsp;есть)"></textarea>
+          </div>
+          <div class="item">
+            <div class="grade">
+              <img src="./images/coursator/minus.svg" alt="+" class="icon" />
+              <p class="text">Минусы</p>
+            </div>
+            <textarea
+              name="minus"
+              id="minus-field"
+              cols="30"
+              rows="10"
+              class="textarea"
+              placeholder="Напишите несколько минусов по пунктам (если&nbsp;они&nbsp;есть)"></textarea>
+          </div>
+        </div>
+        <div class="full-text">
+          <p class="title">Текст полного обзора*</p>
+          <textarea name="full" id="review-field" cols="30" rows="10" class="textarea" placeholder=""></textarea>
+          <p class="subtext">*Поля, обязательные для заполнения</p>
+        </div>
+
+        <div class="add-photo">
+          <div class="upload-file">
+            <input type="file" name="file" id="file" class="inputfile" />
+            <label for="file" class="file-label active">
+              <img src="./images/coursator/IconCameraWhite.svg" alt="icon  icon_white" class="icon icon_white" />
+              <span class="file-name">Прикрепить фото</span>
+            </label>
+          </div>
+
+          <div class="text">
+            <h3 class="title">
+              <span class="amount">+50₽</span>
+              за подтверждение оплаты курса
+            </h3>
+            <p class="subtext">Например: чек о покупке курса, скриншоты из банка, или скриншот из личного кабинета школы.</p>
+          </div>
+        </div>
+        <div class="recomendations">
+          <p class="title">Общие рекомендации для обзора</p>
+          <div class="text">
+            <p class="item">
+              <span>1.&nbsp;&nbsp;</span>
+              <span> Обзор должен содержать не менее 1 000 символов и быть уникальным. </span>
+            </p>
+            <p class="item">
+              <span>2.&nbsp;</span>
+              <span>
+                Если обзор опубликован на нашем сайте, то все дальнейшие права на его распространение получает сайт Coursator. Это означает, что автор не может
+                опубликовать свой материал где-либо еще без письменного разрешения редакции сайта.
+              </span>
+            </p>
+            <p class="item">
+              <span>3.&nbsp;</span>
+              <span> Рекомендуем добавить различные фото/скриншоты, связанные с прохождением курса. </span>
+            </p>
+            <p class="item">
+              <span>&nbsp;</span>
+              <span></span>
+            </p>
+            <p class="item">
+              <span></span>
+              <span>
+                Мы оставляем за собой право редактировать предоставленные нам материалы или попросить дополнить обзор, если не хватает существенной информации.
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="money-order">
+        <div id="money-order" class="content">
+          <div class="cashbe-registration hidden">
+            <img src="./images/coursator/modal-close.svg" alt="X" class="close" />
+            <img src="./images/coursator/IconCashbeModal.svg" alt="logo" class="img" />
+            <p class="subtitle">Cashbe - это кешбэк-сервис с сотнями интернет&nbsp;магазинов.</p>
+            <p class="title">Плюсы использования этого способа оплаты:</p>
+            <div class="text">
+              <p class="item">
+                <span>1.&nbsp;&nbsp;</span>
+                <span>
+                  Мы отправим <span class="red"> 500 руб</span> в аккаунт Cashbe и вы их сможете заказать любым удобным способом самостоятельно. Все очень
+                  просто.
+                </span>
+              </p>
+
+              <p class="item">
+                <span>2.&nbsp;</span>
+                <span> Вы получите бонус <span class="red"> +100 руб</span> от сервиса Cashbe за регистрацию. </span>
+              </p>
+            </div>
+            <p class="links">
+              Чтобы получить деньги на Cashbe, Вам необходимо
+              <a target="_blank" href="https://www.cashbe.ru/?bonus" class="link">зарегистрироваться</a>
+              и&nbsp;добавить в поле номер клиентского договора
+              <a target="_blank" href="https://monosnap.com/file/AOE6bvVuElHpckuuaW7xZCRMTjUuaP" class="link">(пример).</a>
+            </p>
+          </div>
+          <div class="thanks hidden">
+            <img src="./images/coursator/modal-close.svg" alt="X" class="close" />
+            <p class="title">Благодарим за ваш отзыв&nbsp;и&nbsp;обзор&nbsp;курса!</p>
+            <div class="text">
+              <p class="item">В течение 1-2 дней наш менеджер проверит его и свяжется с вами по почте.</p>
+              <p class="item">Если у нас не возникнет вопросов относительно обзора, то мы сразу отправим вам 500 рублей тем способом, который вы указали.</p>
+              <p class="item">Если вы указали несколько способов, то мы отправим деньги на тот, что выше в списке.</p>
+            </div>
+            <a target="_blank" href="https://coursator.online/" class="button active">Хорошо</a>
+          </div>
+
+          <h3 class="title">Заполните полЕ для&nbsp;перевода денег</h3>
+          <div class="wrapper">
+            <input id="cachbe" type="text" name="cachbe" class="input" placeholder="Номер аккаунта в кэшбэк сервисе Cashbe" />
+            <p class="text">
+              <span class="amount">+100₽</span>
+              <span>за регистрацию</span>
+              <span class="more">Подробнее</span>
+            </p>
+          </div>
+
+          <p class="other active">Другие варианты для перевода</p>
+
+          <div class="additional-inputs hidden">
+            <!-- <div class="additional-inputs"> -->
+            <input id="yoomoney" type="text" name="yoomoney" class="input" placeholder="Yoomoney кошелек" />
+            <input id="qiwi" type="text" name="qiwi" class="input" placeholder="Qiwi кошелек" />
+            <input id="visa" type="text" name="visa" class="input" placeholder="Visa/Master Card (только номер и только карты, выпущенные в РФ)" />
+          </div>
+
+          <button type="submit" class="button send-moderation">Отправить обзор на модерацию</button>
+
+          <p id="text-error1" class="text-error">Заполните, пожалуйста, все обязательные поля</p>
+          <p id="text-error2" class="text-error">Заполните хотя бы одно поле для перевода денег</p>
+          <p id="text-error3" class="text-error">Заполните, пожалуйста, все обязательные поля с учетом хотя бы одного поля для перевода денег</p>
+        </div>
+
+        <a href="#" class="message">
+          <img src="./images/coursator/IconMessage.svg" alt="message" class="message-img" />
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer mt-tp-5">
+      <div class="container">
+        <div class="footer__links grid">
+          <a class="footer__link hvr-lnk" href="#">О нас</a><a class="footer__link hvr-lnk" href="#">Контакты</a
+          ><a class="footer__link hvr-lnk" href="#">Отзывы о школах</a>
+        </div>
+        <div class="footer__bottom d-f ai-c">
+          <div class="footer__cop">© 2021 coursator.online</div>
+          <div class="footer__bottom-links d-f">
+            <a class="footer__bottom-link hvr-lnk" href="#">Политика конфиденциальности</a
+            ><a class="footer__bottom-link hvr-lnk" href="#">Пользовательское соглашение</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+    <script src="js/mabar.js"></script>
+  </body>
+</html>

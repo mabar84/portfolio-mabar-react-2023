@@ -1,0 +1,173 @@
+.promo {
+    padding: 40px;
+    margin-bottom: 60px;
+    background-color: rgba(0, 117, 255, 0.02);
+    background-image: url(../images/coursator/promo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    .title {
+        margin-top: 0;
+        margin-bottom: 6px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        display: flex;
+        justify-content: space-between;
+        &_blue {
+            color: $blue;
+        }
+        .link {
+            margin-top: 19px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: $blue;
+        }
+    }
+    .change {
+        margin-bottom: 40px;
+        display: inline-block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: $blue;
+        cursor: pointer;
+    }
+    .text {
+        width: 700px;
+        .item {
+            margin-bottom: 10px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+            &_flex {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 14px;
+            }
+            &:first-child {
+                padding-right: 100px;
+                margin-bottom: 20px;
+            }
+            &_strong {
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .check {
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+        &_blue {
+            display: none;
+        }
+    }
+    .img {
+        display: none;
+    }
+}
+.breadcrumbs-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $blue;
+    margin-left: auto;
+    display: none;
+}
+@media (max-width: 1150px) {
+    .promo {
+        .title {
+            .link {
+                display: none;
+            }
+        }
+        .change {
+            font-size: 12px;
+        }
+        .text {
+            width: 412px;
+            .item {
+                font-size: 16px;
+                &_flex {
+                    gap: 8px;
+                    margin-bottom: 10px;
+                }
+                &:first-child {
+                    padding-right: 0;
+                    margin-bottom: 10px;
+                }
+                &_strong {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+        .check {
+            margin-top: 2px;
+        }
+    }
+    .breadcrumbs-link {
+        display: block;
+    }
+}
+@media (max-width: 750px) {
+    .promo {
+        padding: 20px 0 0 0;
+        background-image: none;
+        margin-bottom: 20px;
+        .title {
+            padding: 0 20px;
+            font-size: 20px;
+            line-height: 24px;
+            .link {
+                display: none;
+            }
+        }
+        .change {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .text {
+            padding: 0 20px;
+            margin-bottom: 27px;
+            width: 100%;
+            .item {
+                font-size: 14px;
+                &_flex {
+                    margin-bottom: 10px;
+                }
+                &:first-child {
+                    margin-bottom: 6px;
+                }
+                &_strong {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+        .check {
+            display: none;
+            &_blue {
+                margin-top: 2px;
+                display: block;
+            }
+        }
+        .img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .breadcrumbs-link {
+        font-size: 10px;
+    }
+    .breadcrumbs__element {
+        font-size: 10px;
+    }
+}

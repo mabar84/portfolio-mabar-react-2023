@@ -6,7 +6,6 @@ import {myTheme} from "../../../../styles/Theme.styled";
 export const ProjectCards = () => {
     return (
         <StyledProjectCards>
-
             {myTheme.state.projectsCards.map((el, ind) => {
                 return <StyledProjectCard key={ind} title={el.name}>
                     <div>
@@ -20,25 +19,23 @@ export const ProjectCards = () => {
                         </StyledProjectCardText>
                     </div>
 
-                    <a href={el.link}>
+                    <a target={"_blank"} rel={'noreferrer'} href={el.link}>
                         <Icon iconId={'project-card-link-icon'} width={'20'} height={'20'} viewBox={'0 0 20 20'}/>
                         Live Preview
                     </a>
                 </StyledProjectCard>
             })}
-
-
         </StyledProjectCards>
     );
 };
 
 const StyledProjectCards = styled.div`
   display: flex;
-  gap: 50px;
+  row-gap: 62px;
+  column-gap: 34px;
   overflow: visible;
-  padding: 10px;
+  flex-wrap: wrap;
 `
-
 const StyledProjectCard = styled.div`
   width: 373px;
   border-radius: 20px;
@@ -48,7 +45,6 @@ const StyledProjectCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: -5px -5px 2px rgba(255, 0, 0, 0.20);
 
   &:hover a {
     color: ${myTheme.colors.gradientTo};
@@ -57,7 +53,6 @@ const StyledProjectCard = styled.div`
   img {
     height: 260px;
     object-fit: cover;
-    object-position: -40px;
     transition: transform 2s;
   }
 
@@ -90,7 +85,6 @@ const StyledProjectCard = styled.div`
     transform: scale(1.10);
   }
 `
-
 const StyledProjectCardTitle = styled.h4`
   padding: 27px 29px 17px;
   color: #CCC;
