@@ -12,11 +12,11 @@ import {myTheme} from "../../styles/Theme.styled";
 
 export const StyledH1 = styled.h1`
   color: ${myTheme.colors.title};
-  font-family: Poppins;
-  font-size: 58px;
+  //font-size: 58px;
+  font-size: calc(32px + 16 * ((100vw - 320px) / (1280 - 320)));
   font-style: normal;
   font-weight: 700;
-  line-height: 70px;
+  line-height: 120%;
   letter-spacing: -1px;
 }
 `

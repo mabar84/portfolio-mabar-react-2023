@@ -27,6 +27,7 @@ const StyledNav = styled.nav`
     align-items: center;
     color: ${myTheme.colors.text};
 
+
     li {
       text-align: center;
       font-size: 20px;
@@ -35,6 +36,11 @@ const StyledNav = styled.nav`
       line-height: 26px;
       display: flex;
       align-items: center;
+      white-space: nowrap;
+
+      ${myTheme.media.less640} {
+        font-size: 16px;
+      }
 
       a {
         transition: color 0.3s;
@@ -43,6 +49,16 @@ const StyledNav = styled.nav`
           color: ${myTheme.colors.gradientTo};
         }
       }
+    }
+
+    ${myTheme.media.less1080} {
+      gap: 15px;
+    }
+
+    ${myTheme.media.less640} {
+      justify-content: start;
+      flex-wrap: nowrap;
+      overflow: auto;
     }
   }
 `;

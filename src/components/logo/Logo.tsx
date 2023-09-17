@@ -30,4 +30,8 @@ const StyledLogo = styled.a`
       stroke: rgba(231, 15, 170, 0.76);
     }
   }
+
+  ${myTheme.media.less1080} {
+    display: none;
+  }
 `

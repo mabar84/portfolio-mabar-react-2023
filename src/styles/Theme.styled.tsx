@@ -8,7 +8,9 @@ export const myTheme = {
         gradientTo: '#E70FAA',
     },
     media: {
-        mobile: 'screen and (max-width: 450px)'
+        less1360: '@media (max-width: 1360px)',
+        less1080: '@media (max-width: 1080px)',
+        less640: '@media (max-width: 640px)',
     },
 
     state: {

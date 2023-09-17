@@ -24,11 +24,11 @@ export const H2Colored = (props: { content: string, coloredContent: string }) =>
 const StyledH2 = styled.h2`
 
   color: ${myTheme.colors.title};
-  font-family: Poppins;
-  font-size: 58px;
+  //font-size: 58px;
+  font-size: calc(32px + 16 * ((100vw - 320px) / (1280 - 320)));
   font-style: normal;
   font-weight: 700;
-  line-height: 70px;
+  line-height: 120%;
   letter-spacing: -1px;
 
   span {

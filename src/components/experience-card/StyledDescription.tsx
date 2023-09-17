@@ -7,7 +7,13 @@ type StyledDescriptionPropsType = {
 
 export const StyledDescription = styled.span<StyledDescriptionPropsType>`
   ${props => props.showPlace && css`
-    width: 200px;`}
+    width: 200px;
+
+
+    ${myTheme.media.less640} {
+      width: auto;
+    }
+  `}
 
   display: inline-block;
   color: ${myTheme.colors.description};

@@ -66,8 +66,12 @@ const StyledExperienceCard = styled.div`
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 140%;
     letter-spacing: 1px;
+
+    ${myTheme.media.less1080} {
+      font-size: 18px;
+    }
   }
 
   .flex-wrapper {
@@ -80,12 +84,16 @@ const StyledExperienceCard = styled.div`
       display: flex;
       align-items: center;
       gap: 4px;
+
+
     }
 
     .right {
       display: flex;
       align-items: center;
       gap: 4px;
+
+
     }
   }
 `

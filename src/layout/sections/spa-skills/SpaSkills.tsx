@@ -8,7 +8,7 @@ import {myTheme} from "../../../styles/Theme.styled";
 
 export const SpaSkills = () => {
     return (
-        <StyledSectionContainer>
+        <StyledSpaSkills className={'container'}>
             <StyledSectionTitle>
                 My Tech Stack
             </StyledSectionTitle>
@@ -21,6 +21,11 @@ export const SpaSkills = () => {
             </StyledSectionText>
             <Slider reverse content={myTheme.state.tools}/>
 
-        </StyledSectionContainer>
+        </StyledSpaSkills>
     );
 };
+
+const StyledSpaSkills = styled.section`
+
+
+`

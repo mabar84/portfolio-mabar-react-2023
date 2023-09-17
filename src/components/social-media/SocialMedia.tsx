@@ -40,4 +40,9 @@ const StyledSocialMedia = styled.ul`
       }
     }
   }
+
+  ${myTheme.media.less640} {
+    justify-content: start;
+  }
+
 `;

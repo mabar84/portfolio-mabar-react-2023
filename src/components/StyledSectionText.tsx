@@ -7,5 +7,10 @@ export const StyledSectionText = styled.p`
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 144%;
+
+  ${myTheme.media.less1080} {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
 `

@@ -21,6 +21,7 @@ const StyledMainPhoto = styled.div`
   height: 349px;
   border-radius: 50%;
   position: relative;
+  flex-shrink: 0;
 
   //svg {
   //  stroke: #fff;
@@ -36,7 +37,7 @@ const StyledMainPhoto = styled.div`
     background: linear-gradient(0deg, ${myTheme.colors.gradientFrom}, ${myTheme.colors.gradientTo}) border-box;
   }
 
-  &:hover div {
+  &:active div, &:hover div {
     transform: rotate(180deg);
   }
 
@@ -50,4 +51,11 @@ const StyledMainPhoto = styled.div`
     transform: translate(-50%, -50%);
     object-fit: cover;
   }
+
+
+  ${myTheme.media.less1080} {
+    margin: 0 auto;
+  }
+
+
 `

@@ -5,11 +5,12 @@ import {StyledSectionContainer} from "../../../components/SectionContainer";
 
 export const SpaContacts = () => {
     return (
-        <StyledSectionContainer>
+        <StyledSpaContacts className={'container'}>
             <StyledSectionTitle>
                 Contacts
             </StyledSectionTitle>
-        </StyledSectionContainer>
+        </StyledSpaContacts>
 
     );
 };
+const StyledSpaContacts = styled.section``

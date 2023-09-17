@@ -118,5 +118,10 @@ const StyledSlider = styled.div<{ reverse?: boolean }>`
     margin-right: 50px;
     margin-left: 50px;
     object-fit: cover;
+
+    ${myTheme.media.less1080} {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
   }
 `
