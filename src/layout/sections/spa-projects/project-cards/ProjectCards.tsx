@@ -35,6 +35,11 @@ const StyledProjectCards = styled.div`
   column-gap: 34px;
   overflow: visible;
   flex-wrap: wrap;
+
+  ${myTheme.media.less1080} {
+    gap: 20px;
+    justify-content: center;
+  }
 `
 const StyledProjectCard = styled.div`
   width: 373px;

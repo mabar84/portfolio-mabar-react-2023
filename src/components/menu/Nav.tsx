@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {Link} from "react-router-dom";
 import {myTheme} from "../../styles/Theme.styled";
-import {Icon} from "../icon/Icon";
-import {SocialMedia} from "../social-media/SocialMedia";
 
 export const Nav = () => {
     return (
@@ -59,6 +56,7 @@ const StyledNav = styled.nav`
       justify-content: start;
       flex-wrap: nowrap;
       overflow: auto;
+      gap: 10px;
     }
   }
 `;
