@@ -82,7 +82,6 @@ const StyledSlider = styled.div<{ reverse?: boolean }>`
       -webkit-animation: scroll-reverse 36s linear infinite;
       animation: scroll-reverse 36s linear infinite;
       display: flex;
-      //width: calc(250px * 14);
       width: 1800px;
     }
   `}

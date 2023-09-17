@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Staging (a) - ScRolling in the Deep</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/scroolly.demo.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="qbody">
+        <div class="staging staging-1">
+            <div class="to-fix">
+                <div class="stage">
+                    <div class="scene scene-3">... а программисты
+                        страдают!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/scroolly.demo.min.js"></script>
+    <script src="js/jquery.scroolly.js"></script>
+
+    <script>
+        $('.to-fix').scroolly([
+            {
+                alias: 'before',
+                from: '',
+                to: 'con-top 600 = bottom',
+                css: {
+                    position: 'static'
+                }
+            },
+            {
+                alias: 'fixing',
+                from: 'con-top 600 = bottom',
+                to: 'con-top +3000 = bottom',
+                css: {
+                    position: 'fixed',
+                    top: '',
+                    bottom: '0'
+                }
+                //                    onScroll: function($el, offset, length)
+            },
+            {
+                alias: 'unfixing',
+                from: 'con-top +3000 = bottom',
+                to: 'doc-bottom',
+                css: {
+                    position: 'absolute',
+                    top: '',
+                    bottom: '0'
+                }
+            }
+        ], $('.staging'));
+
+        $('.staging-1 .scene-3').scroolly([
+            {
+                alias: 'before',
+                from: '',
+                to: 'con-top +1800 = bottom',
+                css: {
+                    right: '200.0%'
+                }
+            },
+            {
+                alias: 'slide1',
+                from: 'con-top +1800 = bottom',
+                to: 'con-top +2400 = bottom',
+                cssFrom: {
+                    right: '200.0%'
+                },
+                cssTo: {
+                    right: '50.0%'
+                }
+            },
+            {
+                alias: 'after',
+                from: 'con-top +2400 = bottom',
+                to: 'doc-bottom',
+                css: {
+                    right: '50.0%'
+                }
+            }
+        ], $('.staging-1'));
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,700 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Tahoma";
+  src: url("Tahoma.woff") format("woff"), url("Tahoma.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MuseoCyrl-900";
+  src: url("../fonts/MuseoCyrl-900.woff") format("woff"),
+    url("../fonts/MuseoCyrl-900.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MuseoCyrl-300";
+  src: url("../fonts/MuseoCyrl-300.woff") format("woff"),
+    url("../fonts/MuseoCyrl-300.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Tahoma", sans-serif;
+  color: #202020;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  padding: 22px 0;
+  background-color: #f1f1f1;
+}
+
+.header-container {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+}
+.logo {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #202020;
+}
+
+.nav-link {
+  margin-left: 11px;
+  margin-right: 11px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #202020;
+}
+.login {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #202020;
+}
+
+/* Главная секция */
+.hero {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 62px;
+  padding-bottom: 71px;
+}
+
+.hero-container {
+  display: flex;
+  /* align-items: center; */
+  max-width: 1140px;
+  margin: auto;
+}
+
+.image-block {
+  position: relative;
+  margin-right: 122px;
+  width: 460px;
+  height: 646px;
+  flex-shrink: 0;
+}
+
+.sale-label {
+  position: absolute;
+  top: 23px;
+  right: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #c93535;
+  font-family: "Roboto", sans-serif;
+  padding: 12px 17px;
+}
+
+.hero-image {
+  position: absolute;
+  width: 460px;
+  height: 646px;
+  /* object-fit: cover; */
+}
+
+.author {
+  display: block;
+  margin-top: 95px;
+  margin-bottom: 22px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: "MuseoCyrl-900";
+  font-weight: normal;
+  font-size: 54px;
+}
+
+.subtitle {
+  display: block;
+  line-height: 29px;
+  margin-bottom: 48px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.info {
+  margin-bottom: 49px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info-text {
+  margin-bottom: 16px;
+  flex-basis: 45%;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.price {
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.pricetag {
+  margin-right: 64px;
+  font-size: 55px;
+  font-weight: 400;
+}
+
+.favorites {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.button {
+  width: 250px;
+  padding: 22px 50px;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  text-decoration: none;
+}
+
+.button-primary {
+  margin-right: 20px;
+  background-color: #f89c02;
+  color: #ffffff;
+}
+
+.button-outline {
+  border: 2px solid #f89c02;
+  background-color: #ffffff;
+  color: #f89c02;
+}
+
+/* О книге */
+
+.about {
+  background-color: #f1f1f1;
+}
+
+.about-container {
+  max-width: 1140px;
+  margin: auto;
+  padding-top: 93px;
+  padding-bottom: 96px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.about-book {
+  max-width: 454px;
+  flex-shrink: 0;
+  font-size: 16px;
+  text-align: left;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.author-avatar {
+  margin-right: 21px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.author-bio {
+  max-width: 300px;
+}
+
+.author-text {
+  margin-top: 24px;
+  flex-basis: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: left;
+  /* Text style for "Автор ютуб" */
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.about-author {
+  padding: 68px 53px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  align-items: center;
+  max-width: 552px;
+  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
+  border-radius: 10px;
+  border: 1px solid #f3f3f3;
+  background-color: #ffffff;
+}
+.author-name {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.author-link {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Читатели */
+
+.readers-title {
+  margin-top: 87px;
+  margin-bottom: 57px;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.readers-container {
+  padding-bottom: 109px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1140px;
+}
+
+.reader-avatar {
+  object-fit: cover;
+  width: 165px;
+  height: 165px;
+}
+
+.readers-photo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  row-gap: 30px;
+}
+
+/* Подвал */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 93px;
+  background-color: #f1f1f1;
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-title {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+.list-item {
+  margin-bottom: 16px;
+}
+
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+.requisites {
+  max-width: 240px;
+  margin-right: 160px;
+}
+
+.information {
+  max-width: 240px;
+  margin-right: 160px;
+}
+
+.contacts {
+  max-width: 240px;
+}
+
+.to-top {
+  padding: 18px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
+  border-radius: 4px;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .containers {
+    max-width: 960px;
+  }
+
+  .image-block {
+    width: 390px;
+    margin-right: 30px;
+  }
+
+  .author {
+    display: block;
+    margin-top: 46px;
+  }
+
+  .about-book {
+    max-width: 367px;
+  }
+
+  .about-author {
+    max-width: 552px;
+  }
+
+  .readers-container {
+    padding-bottom: 94px;
+  }
+
+  .readers-title {
+    margin-top: 69px;
+    margin-bottom: 57px;
+  }
+
+  .reader-avatar {
+    object-fit: cover;
+    width: 139px;
+    height: 139px;
+  }
+
+  .readers-photo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    row-gap: 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .containers {
+    max-width: 760px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .image-block {
+    width: 298px;
+    margin-right: 30px;
+  }
+
+  .author {
+    display: block;
+    margin-bottom: 13px;
+    font-size: 22px;
+  }
+
+  .title {
+    margin-bottom: 10px;
+    font-size: 46px;
+  }
+
+  .subtitle {
+    margin-bottom: 28px;
+  }
+
+  .age,
+  .format {
+    flex-grow: 1;
+  }
+
+  .price {
+    margin-bottom: 39px;
+  }
+
+  .info {
+    margin-bottom: 23px;
+  }
+
+  .button {
+    max-width: 200px;
+    padding: 18px 40px;
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 29px;
+  }
+
+  .about-container {
+    flex-wrap: wrap;
+  }
+
+  .about-book {
+    max-width: 100%;
+    margin-bottom: 62px;
+  }
+
+  .about-author {
+    max-width: 552px;
+  }
+
+  .requisites,
+  .information {
+    margin-right: 70px;
+  }
+
+  .readers-photo .wrapper-avatar:nth-child(-n + 4) {
+    display: none;
+  }
+
+  .reader-avatar {
+    width: 165px;
+    height: 165px;
+  }
+
+  .readers-container {
+    padding-bottom: 81px;
+  }
+
+  .readers-title {
+    margin-top: 74px;
+    margin-bottom: 57px;
+    font-size: 24px;
+  }
+
+  .readers-photo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    row-gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .containers {
+    max-width: 560px;
+  }
+
+  .hero {
+    margin-top: 40px;
+  }
+
+  .hero-container {
+    flex-wrap: wrap;
+  }
+
+  .image-block {
+    min-width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .readers-photo .wrapper-avatar:nth-child(4n) {
+    display: none;
+  }
+
+  .requisites {
+    margin-right: 40px;
+    margin-bottom: 60px;
+  }
+  .information {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .tapid {
+    display: none;
+  }
+
+  .containers {
+    width: 95%;
+  }
+
+  .author {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .author-link {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 36px;
+    margin-bottom: 19px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .info {
+    flex-wrap: wrap;
+    margin-bottom: 17px;
+  }
+
+  .info-text {
+    flex-basis: 100%;
+    margin-bottom: 19px;
+  }
+
+  .favorites-text {
+    display: none;
+  }
+
+  .button {
+    min-width: 100%;
+  }
+
+  .button-primary {
+    margin-bottom: 20px;
+  }
+
+  .about-book {
+    margin-bottom: 70px;
+  }
+
+  .about-author {
+    width: 95%;
+    margin: 54px 44px;
+    padding-left: 47px;
+    padding-right: 15px;
+  }
+
+  .author-text {
+    font-size: 14px;
+  }
+
+  .author-avatar {
+    width: 64px;
+    height: 64px;
+  }
+
+  .readers-container {
+    padding-bottom: 85px;
+  }
+
+  .readers-photo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 24px;
+  }
+
+  .readers-title {
+    margin-top: 80px;
+    margin-bottom: 57px;
+  }
+
+  .reader-avatar {
+    width: 144px;
+    height: 144px;
+  }
+
+  .requisites {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 36px;
+  }
+
+  .footer-title {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+
+  .footer-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-author {
+    width: 95%;
+    margin: 0;
+    padding-right: 31px;
+    padding-bottom: 44px;
+    padding-left: 25px;
+  }
+
+  .readers-photo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    row-gap: 15px;
+  }
+
+  .readers-title {
+    margin-top: 60px;
+    margin-bottom: 36px;
+  }
+
+  .reader-avatar {
+    width: 125px;
+    height: 125px;
+  }
+
+  .readers-photo .wrapper-avatar:nth-child(2n) {
+    display: none;
+  }
+
+  .readers-photo {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
