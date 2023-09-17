@@ -1,18 +1,15 @@
 import React from 'react';
 import styled from "styled-components";
 import mainPhoto from "../../../../assets/images/my-photo.jpg";
-import abstract from "../../../../assets/images/abstract.svg";
 import {myTheme} from "../../../../styles/Theme.styled";
 
 export const MainPhoto = () => {
     return (
         <StyledMainPhoto>
-            <div></div>
-            <img src={mainPhoto} alt={'me'}/>
-            `
-            {/*<Icon iconId={'abstract'} height={'444'} width={'444'} viewBox={'0 0 444 444'}/>*/}
-        </StyledMainPhoto>
+            <div className={'bg'}></div>
 
+            <img src={mainPhoto} alt={'me'}/>
+        </StyledMainPhoto>
     );
 };
 
@@ -23,12 +20,7 @@ const StyledMainPhoto = styled.div`
   position: relative;
   flex-shrink: 0;
 
-  //svg {
-  //  stroke: #fff;
-  //  transform: rotate(180deg);
-  //}
-
-  div {
+  .bg {
     width: 100%;
     height: 100%;
     border: 10px solid transparent;
@@ -37,8 +29,8 @@ const StyledMainPhoto = styled.div`
     background: linear-gradient(0deg, ${myTheme.colors.gradientFrom}, ${myTheme.colors.gradientTo}) border-box;
   }
 
-  &:active div, &:hover div {
-    transform: rotate(180deg);
+  &:active .bg, &:hover .bg {
+    transform: rotate(270deg);
   }
 
   img {
@@ -52,10 +44,7 @@ const StyledMainPhoto = styled.div`
     object-fit: cover;
   }
 
-
   ${myTheme.media.less1080} {
     margin: 0 auto;
   }
-
-
 `
