@@ -2,7 +2,6 @@ import React from 'react';
 import styled from "styled-components";
 import {StyledSectionTitle} from "../../../components/StyledSectionTitle";
 import {StyledSectionText} from "../../../components/StyledSectionText";
-import {StyledSectionContainer} from "../../../components/SectionContainer";
 
 export const SpaProjects = () => {
     return (

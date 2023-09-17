@@ -111,7 +111,6 @@ const StyledSlider = styled.div<{ reverse?: boolean }>`
     top: 0;
   }
 
-
   img {
     height: 100px;
     width: 100px;

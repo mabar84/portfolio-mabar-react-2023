@@ -60,7 +60,6 @@ const StyledExperienceCard = styled.div`
   border-bottom: 2px solid ${myTheme.colors.description};
   margin-bottom: 38px;
 
-
   h4 {
     color: ${myTheme.colors.text};
     font-size: 20px;
@@ -84,16 +83,12 @@ const StyledExperienceCard = styled.div`
       display: flex;
       align-items: center;
       gap: 4px;
-
-
     }
 
     .right {
       display: flex;
       align-items: center;
       gap: 4px;
-
-
     }
   }
 `

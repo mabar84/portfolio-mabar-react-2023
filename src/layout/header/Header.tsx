@@ -3,7 +3,6 @@ import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
 import {Nav} from "../../components/menu/Nav";
 import {myTheme} from "../../styles/Theme.styled";
-import {StyledFlexWrapper} from "../../components/StyledFlexWrapper";
 import {SocialMedia} from "../../components/social-media/SocialMedia";
 
 export const Header = () => {

@@ -2,8 +2,6 @@ import React from 'react';
 import {MainPhoto} from "./main-photo/MainPhoto";
 import {H2, H2Colored} from "../../../components/h2/H2";
 import {StyledH1} from "../../../components/h1/H1";
-import {StyledFlexWrapper} from "../../../components/StyledFlexWrapper";
-import {StyledSectionContainer} from "../../../components/SectionContainer";
 import styled from "styled-components";
 import {myTheme} from "../../../styles/Theme.styled";
 

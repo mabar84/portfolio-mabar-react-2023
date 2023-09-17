@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
 import {StyledSectionTitle} from "../../../components/StyledSectionTitle";
-import {StyledSectionContainer} from "../../../components/SectionContainer";
 import {StyledSectionText} from "../../../components/StyledSectionText";
 import {Slider} from "../../../components/Slider/Slider";
 import {myTheme} from "../../../styles/Theme.styled";
