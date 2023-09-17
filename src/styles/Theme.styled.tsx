@@ -84,6 +84,21 @@ export const myTheme = {
         ],
         tools: [
             'VSCode', 'WebStorm', 'Git', 'Github', 'bibucket', 'Figma', 'Photoshop', 'yarn', 'FileZilla'
+        ],
+        projectsCards: [
+            {
+                name: 'a200',
+                title: 'Let\'s choose a car!',
+                text: 'About mercedes-benz a200',
+                link: 'https://mabar.ru/projects/a200/',
+
+            },
+            {
+                name: 'tourplan',
+                title: 'Let\'s have a good rest!',
+                text: 'About booking',
+                link: 'https://mabar.ru/projects/a200/'
+            },
         ]
     }
 }
