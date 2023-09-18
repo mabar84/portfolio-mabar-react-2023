@@ -21,5 +21,4 @@ export const SpaProjects = () => {
 };
 
 const StyledSpaProjects = styled.section`
-
 `

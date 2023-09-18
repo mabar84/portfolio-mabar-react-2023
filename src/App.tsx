@@ -30,6 +30,6 @@ function App() {
 export default App;
 
 const StyledApp = styled.div`
-  height: 100vh;
+  padding-bottom: 60px;
 `
 
