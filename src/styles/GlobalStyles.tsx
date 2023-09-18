@@ -15,6 +15,15 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: ${myTheme.colors.background};
+
+  }
+
+  body::-webkit-scrollbar {
+    width: 0;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: transparent;
   }
 
   .App {

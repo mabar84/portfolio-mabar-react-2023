@@ -20,6 +20,11 @@ const StyledMainPhoto = styled.div`
   position: relative;
   flex-shrink: 0;
 
+  ${myTheme.media.less640} {
+    width: 320px;
+    height: 320px;
+  }
+
   .bg {
     width: 100%;
     height: 100%;
