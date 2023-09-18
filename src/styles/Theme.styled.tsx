@@ -8,9 +8,9 @@ export const myTheme = {
         gradientTo: '#E70FAA',
     },
     media: {
-        less1360: '@media (max-width: 1360px)',
-        less1080: '@media (max-width: 1080px)',
-        less640: '@media (max-width: 640px)',
+        less1360: '@media screen and (max-width: 1360px)',
+        less1080: '@media screen and (max-width: 1080px)',
+        less640: '@media screen and (max-width: 640px)',
     },
 
     state: {
@@ -157,6 +157,24 @@ export const myTheme = {
                 title: 'Let\'s book a ticket',
                 text: 'Making a calendar and calculator for the main page of the finished project',
                 link: 'https://mabar.ru/box/sarabi/'
+            },
+            {
+                name: 'masterhand',
+                title: 'Find perfect local Professionals!',
+                text: 'Layout of several pages of a currently working website and many fixing css',
+                link: 'https://masterhand.pro/'
+            },
+            {
+                name: 'portfolio-landing',
+                title: 'Look at it differently!',
+                text: 'Landing page of this portfolio',
+                link: 'https://mabar84.github.io/portfolio-mabar-react-2023/'
+            },
+            {
+                name: 'saharok',
+                title: 'Choose beautiful templates for your online store!',
+                text: 'I spent several months constantly creating product card templates for marketplaces.',
+                link: 'https://saharok.info/'
             },
         ]
     }
