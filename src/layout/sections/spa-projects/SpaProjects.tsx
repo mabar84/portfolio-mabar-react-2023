@@ -6,7 +6,7 @@ import {ProjectCards} from "./project-cards/ProjectCards";
 
 export const SpaProjects = () => {
     return (
-        <StyledSpaProjects className={'container'}>
+        <StyledSpaProjects className={'container'} id={'projects'}>
             <StyledSectionTitle>
                 Projects
             </StyledSectionTitle>

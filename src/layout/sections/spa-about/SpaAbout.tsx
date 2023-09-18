@@ -7,7 +7,7 @@ import {myTheme} from "../../../styles/Theme.styled";
 
 export const SpaAbout = () => {
     return (
-        <StyledSpaAbout className={'container'}>
+        <StyledSpaAbout className={'container'} id={'about'}>
             <StyledSectionTitle>
                 About Me
             </StyledSectionTitle>
@@ -38,5 +38,5 @@ export const SpaAbout = () => {
 };
 
 const StyledSpaAbout = styled.section`
- 
+
 `

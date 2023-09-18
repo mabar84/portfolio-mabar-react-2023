@@ -7,7 +7,7 @@ import {myTheme} from "../../../styles/Theme.styled";
 
 export const SpaSkills = () => {
     return (
-        <StyledSpaSkills className={'container'}>
+        <StyledSpaSkills className={'container'} id={'skills'}>
             <StyledSectionTitle>
                 My Tech Stack
             </StyledSectionTitle>

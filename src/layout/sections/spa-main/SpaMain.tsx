@@ -8,7 +8,7 @@ import {myTheme} from "../../../styles/Theme.styled";
 
 export const SpaMain = () => {
     return (
-        <StyledMainContainer className={'container'}>
+        <StyledMainContainer className={'container'} id={'home'}>
             <div>
                 <H2Colored content={'👋,'} coloredContent={'Hi'}/>
                 <H2 content={'My name is'}/>

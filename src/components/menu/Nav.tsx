@@ -9,11 +9,19 @@ export const Nav = () => {
             <ul>
                 {myTheme.state.navItems.map((el, ind) => {
                     return <li key={ind}>
-                        <Link to={el[1]}>{el[0]}</Link>
-                        {/*<a href={el[1]}>{el[0]}</a>*/}
+                        {/*<Link to={el[1]}>{el[0]}</Link>*/}
+                        <a href={`#${el[1]}`}>{el[0]}</a>
                     </li>
                 })}
             </ul>
+            {/*<ul>*/}
+            {/*    {myTheme.state.navItems.map((el, ind) => {*/}
+            {/*        return <li key={ind}>*/}
+            {/*            <Link to={el[1]}>{el[0]}</Link>*/}
+            {/*            /!*<a href={el[1]}>{el[0]}</a>*!/*/}
+            {/*        </li>*/}
+            {/*    })}*/}
+            {/*</ul>*/}
         </StyledNav>
     );
 };

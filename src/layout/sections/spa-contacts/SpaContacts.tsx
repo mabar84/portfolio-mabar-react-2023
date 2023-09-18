@@ -4,7 +4,7 @@ import {H2, H2Colored} from "../../../components/h2/H2";
 
 export const SpaContacts = () => {
     return (
-        <StyledSpaContacts className={'container'}>
+        <StyledSpaContacts className={'container'} id={'contacts'}>
             <H2 content={'For any questions please mail me:'}/>
             <H2Colored coloredContent={'mabar@mabar.ru'}/>
         </StyledSpaContacts>
