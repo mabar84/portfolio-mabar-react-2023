@@ -48,12 +48,6 @@ export const GlobalStyles = createGlobalStyle`
       max-width: calc(100vw - 20px);
       margin: 0 10px;
     }
-
-
-  }
-
-  section.container {
-    margin-bottom: 80px;
   }
 
   a {

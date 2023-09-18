@@ -11,25 +11,18 @@ import styled from "styled-components";
 function App() {
     return (
         <StyledApp className="App">
-            <Header/>
+            <Router>
+                <Header/>
 
-            <SpaMain/>
-            <SpaAbout/>
-            <SpaSkills/>
-            <SpaProjects/>
-            <SpaContacts/>
-            {/*<Router>*/}
-            {/*    <Header/>*/}
-
-            {/*    <Routes>*/}
-            {/*        <Route element={<SpaMain/>} path='/'/>*/}
-            {/*        <Route element={<SpaMain/>} path='/home'/>*/}
-            {/*        <Route element={<SpaAbout/>} path='/about'/>*/}
-            {/*        <Route element={<SpaSkills/>} path='/skills'/>*/}
-            {/*        <Route element={<SpaProjects/>} path='/projects'/>*/}
-            {/*        <Route element={<SpaContacts/>} path='/contacts'/>*/}
-            {/*    </Routes>*/}
-            {/*</Router>*/}
+                <Routes>
+                    <Route element={<SpaMain/>} path='/'/>
+                    <Route element={<SpaMain/>} path='/home'/>
+                    <Route element={<SpaAbout/>} path='/about'/>
+                    <Route element={<SpaSkills/>} path='/skills'/>
+                    <Route element={<SpaProjects/>} path='/projects'/>
+                    <Route element={<SpaContacts/>} path='/contacts'/>
+                </Routes>
+            </Router>
         </StyledApp>
     );
 }
