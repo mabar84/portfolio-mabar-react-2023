@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/portfolio-mabar-react-2023/static/css/main.e6c13ad2.css",
+    "main.js": "/portfolio-mabar-react-2023/static/js/main.e3ab834c.js",
+    "static/js/787.25eaef86.chunk.js": "/portfolio-mabar-react-2023/static/js/787.25eaef86.chunk.js",
+    "static/media/enko.jpg": "/portfolio-mabar-react-2023/static/media/enko.4a9d6ad7cf228193a3dd.jpg",
+    "static/media/my-photo.jpg": "/portfolio-mabar-react-2023/static/media/my-photo.74eb3abcb6bc8e8d1759.jpg",
+    "static/media/cats.jpg": "/portfolio-mabar-react-2023/static/media/cats.9764dcb982830dadd881.jpg",
+    "static/media/track-global.jpg": "/portfolio-mabar-react-2023/static/media/track-global.6eb8c489d5908a3f5682.jpg",
+    "static/media/urok-pw.jpg": "/portfolio-mabar-react-2023/static/media/urok-pw.810608cc67308e7610d3.jpg",
+    "static/media/rb-courses.jpg": "/portfolio-mabar-react-2023/static/media/rb-courses.27a349cde8254a892fe0.jpg",
+    "static/media/coursator.jpg": "/portfolio-mabar-react-2023/static/media/coursator.4a22a15566fa0ae07825.jpg",
+    "static/media/universal.jpg": "/portfolio-mabar-react-2023/static/media/universal.272ce6479e6926bcb51f.jpg",
+    "static/media/schooltask.jpg": "/portfolio-mabar-react-2023/static/media/schooltask.856e13967fc4bf32e008.jpg",
+    "static/media/babor.jpg": "/portfolio-mabar-react-2023/static/media/babor.d7dbca4f8aa4c5210f96.jpg",
+    "static/media/yusar.jpg": "/portfolio-mabar-react-2023/static/media/yusar.e14d10becd12cba08f9c.jpg",
+    "static/media/realestate.jpg": "/portfolio-mabar-react-2023/static/media/realestate.a5790f099f7be2bcd56f.jpg",
+    "static/media/crossword.jpg": "/portfolio-mabar-react-2023/static/media/crossword.361db65936ef6ee84e98.jpg",
+    "static/media/tourplan.jpg": "/portfolio-mabar-react-2023/static/media/tourplan.3c79fb001554e4776efd.jpg",
+    "static/media/bookstore.jpg": "/portfolio-mabar-react-2023/static/media/bookstore.6994f8d02a75e1984fbf.jpg",
+    "static/media/a200.jpg": "/portfolio-mabar-react-2023/static/media/a200.c3147e21a48658314960.jpg",
+    "static/media/icons-sprite.svg": "/portfolio-mabar-react-2023/static/media/icons-sprite.ce5435cc02078899887cdb60fa099169.svg",
+    "static/media/sarabi.jpg": "/portfolio-mabar-react-2023/static/media/sarabi.0bac861b6225a3ed3b86.jpg",
+    "static/media/cars.jpg": "/portfolio-mabar-react-2023/static/media/cars.d0270ec49c2053d64f8b.jpg",
+    "static/media/storybook.png": "/portfolio-mabar-react-2023/static/media/storybook.1866d65b5d0e00fb4b68.png",
+    "index.html": "/portfolio-mabar-react-2023/index.html",
+    "main.e6c13ad2.css.map": "/portfolio-mabar-react-2023/static/css/main.e6c13ad2.css.map",
+    "main.e3ab834c.js.map": "/portfolio-mabar-react-2023/static/js/main.e3ab834c.js.map",
+    "787.25eaef86.chunk.js.map": "/portfolio-mabar-react-2023/static/js/787.25eaef86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.e3ab834c.js"
+  ]
+}
