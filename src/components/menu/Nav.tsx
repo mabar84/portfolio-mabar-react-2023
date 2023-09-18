@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {myTheme} from "../../styles/Theme.styled";
+import {Link} from "react-router-dom";
 
 export const Nav = () => {
     return (
@@ -8,7 +9,8 @@ export const Nav = () => {
             <ul>
                 {myTheme.state.navItems.map((el, ind) => {
                     return <li key={ind}>
-                        <a href={el[1]}>{el[0]}</a>
+                        <Link to={el[1]}>{el[0]}</Link>
+                        {/*<a href={el[1]}>{el[0]}</a>*/}
                     </li>
                 })}
             </ul>

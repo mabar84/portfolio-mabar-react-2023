@@ -10,7 +10,7 @@ export const H2 = (props: { content: string }) => {
     );
 };
 
-export const H2Colored = (props: { content: string, coloredContent: string }) => {
+export const H2Colored = (props: { content?: string, coloredContent: string }) => {
     return (
         <StyledH2>
             <span>
@@ -22,7 +22,6 @@ export const H2Colored = (props: { content: string, coloredContent: string }) =>
 };
 
 const StyledH2 = styled.h2`
-
   color: ${myTheme.colors.title};
   //font-size: 58px;
   font-size: calc(32px + 16 * ((100vw - 320px) / (1280 - 320)));

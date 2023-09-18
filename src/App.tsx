@@ -6,10 +6,11 @@ import {SpaAbout} from "./layout/sections/spa-about/SpaAbout";
 import {SpaProjects} from "./layout/sections/spa-projects/SpaProjects";
 import {SpaContacts} from "./layout/sections/spa-contacts/SpaContacts";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import styled from "styled-components";
 
 function App() {
     return (
-        <div className="App">
+        <StyledApp className="App">
             <Router>
                 <Header/>
 
@@ -22,9 +23,13 @@ function App() {
                     <Route element={<SpaContacts/>} path='/contacts'/>
                 </Routes>
             </Router>
-        </div>
+        </StyledApp>
     );
 }
 
 export default App;
+
+const StyledApp = styled.div`
+  height: 100vh;
+`
 

@@ -55,7 +55,7 @@ export const myTheme = {
             {
                 title: 'Web developer',
                 organisation: 'Freelance',
-                date: 'Jun 2023 - present',
+                date: 'Jun 2021 - present',
                 label: '',
                 place: 'Everywhere',
                 showPlace: true
