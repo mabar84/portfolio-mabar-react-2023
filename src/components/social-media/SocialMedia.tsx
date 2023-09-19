@@ -8,7 +8,7 @@ export const SocialMedia = () => {
         <StyledSocialMedia>
             {myTheme.state.socialMediaItems.map((el, ind) => {
                 return <li key={ind}>
-                    <a href={el.href}>
+                    <a title={el.title} href={el.href}>
                         <Icon iconId={el.iconId} viewBox={'0 0 50 50'} width={'48'} height={'48'}/>
                     </a>
                 </li>

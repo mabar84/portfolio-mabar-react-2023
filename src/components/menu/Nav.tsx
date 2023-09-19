@@ -10,7 +10,6 @@ export const Nav = () => {
                 {myTheme.state.navItems.map((el, ind) => {
                     return <li key={ind}>
                         <Link to={el[1]}>{el[0]}</Link>
-                        {/*<a href={el[1]}>{el[0]}</a>*/}
                     </li>
                 })}
             </ul>
@@ -25,7 +24,6 @@ const StyledNav = styled.nav`
     height: 100%;
     align-items: center;
     color: ${myTheme.colors.text};
-
 
     li {
       text-align: center;

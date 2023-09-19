@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import mainPhoto from "../../../../assets/images/my-photo.jpg";
+import mainPhoto from "../../../../assets/images/my-photo.webp";
 import {myTheme} from "../../../../styles/Theme.styled";
 
 export const MainPhoto = () => {

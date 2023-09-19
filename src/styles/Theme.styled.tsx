@@ -24,14 +24,17 @@ export const myTheme = {
         socialMediaItems: [
             {
                 iconId: 'soc-git',
+                title: 'github',
                 href: "https://github.com/mabar84"
             },
             {
                 iconId: 'soc-telegram',
+                title: 'telegram',
                 href: "https://tele.click/@mabartutby"
             },
             {
                 iconId: 'soc-linkedin',
+                title: 'LinkedIn',
                 href: "https://www.linkedin.com/in/%D0%BC%D0%B8%D1%85%D0%B0%D0%B8%D0%BB-%D0%B1%D0%B0%D1%80%D0%B0%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9-8121ab287/"
             },
         ],
@@ -101,7 +104,7 @@ export const myTheme = {
             {
                 name: 'track-global',
                 title: 'Find your parcel!',
-                text: 'Accurate tracking of postal items',
+                text: 'Accurate tracking of postal items. Layout of several pages and widgets of a currently working website',
                 link: 'https://track.global/ru'
             },
             {
@@ -154,7 +157,7 @@ export const myTheme = {
             },
             {
                 name: 'sarabi',
-                title: 'Let\'s book a ticket',
+                title: 'Let\'s book a ticket!',
                 text: 'Making a calendar and calculator for the main page of the finished project',
                 link: 'https://mabar.ru/box/sarabi/'
             },
