@@ -35,6 +35,15 @@ const StyledH2 = styled.h2`
     background: -webkit-linear-gradient(135deg, #a855f7, rgba(233, 14, 138, 0.91));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    &::selection {
+      background: ${myTheme.colors.title};
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: ${myTheme.colors.gradientFrom};
+    }
+
   }
+
+
 }
 `

@@ -21,6 +21,11 @@ export const GlobalStyles = createGlobalStyle`
     scrollbar-width: none;
   }
 
+  *::selection {
+    color: ${myTheme.colors.gradientTo};
+    background-color: ${myTheme.colors.title};
+  }
+
   body::-webkit-scrollbar {
     width: 0;
   }
