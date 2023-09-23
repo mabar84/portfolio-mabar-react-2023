@@ -10,10 +10,6 @@ type SliderPropsType = {
 export const Slider = (props: SliderPropsType) => {
     return (
         <StyledSlider reverse={props.reverse}>
-            {/*{props.content.map((el, ind) => {*/}
-            {/*    return <img key={ind} src={require(`./../../assets/images/${el.toLowerCase()}.png`)}*/}
-            {/*                title={el} alt={el}/>*/}
-            {/*})}*/}
             <div className="slide-track">
                 {props.content.map((el, ind) => {
                     return <img key={ind} src={require(`./../../assets/images/${el.toLowerCase()}.png`)}
@@ -24,7 +20,6 @@ export const Slider = (props: SliderPropsType) => {
                                 title={el} alt={el}/>
                 })}
             </div>
-
         </StyledSlider>
     );
 };
@@ -36,7 +31,6 @@ const StyledSlider = styled.div<{ reverse?: boolean }>`
       transform: translateX(0);
     }
     100% {
-      //transform: translateX(calc(-250px * 7));
       transform: translateX(calc(-1800px));
     }
   };
@@ -45,7 +39,6 @@ const StyledSlider = styled.div<{ reverse?: boolean }>`
       transform: translateX(0);
     }
     100% {
-      //transform: translateX(calc(-250px * 7));
       transform: translateX(calc(-1800px));
     }
   }
@@ -54,14 +47,12 @@ const StyledSlider = styled.div<{ reverse?: boolean }>`
     -webkit-animation: scroll 36s linear infinite;
     animation: scroll 36s linear infinite;
     display: flex;
-    //width: calc(250px * 14);
     width: calc(3600px);
   }
 
   ${props => props.reverse && css`
     @-webkit-keyframes scroll-reverse {
       0% {
-        //transform: translateX(calc(-250px * 7));
         transform: translateX(calc(-1800px));
       }
       100% {
@@ -70,7 +61,6 @@ const StyledSlider = styled.div<{ reverse?: boolean }>`
     }
     @keyframes scroll-reverse {
       0% {
-        //transform: translateX(calc(-250px * 7));
         transform: translateX(calc(-1800px));
       }
       100% {
