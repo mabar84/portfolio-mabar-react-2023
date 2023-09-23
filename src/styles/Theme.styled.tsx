@@ -10,7 +10,7 @@ export const myTheme = {
     media: {
         less1360: '@media screen and (max-width: 1360px)',
         less1080: '@media screen and (max-width: 1080px)',
-        less640: '@media screen and (max-width: 640px)',
+        less700: '@media screen and (max-width: 700px)',
     },
 
     state: {

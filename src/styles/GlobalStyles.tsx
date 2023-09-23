@@ -52,7 +52,7 @@ export const GlobalStyles = createGlobalStyle`
       margin: 0 30px;
     }
 
-    ${myTheme.media.less640} {
+    ${myTheme.media.less700} {
       max-width: calc(100vw - 20px);
       margin: 0 10px;
     }

@@ -10,7 +10,7 @@ export const StyledDescription = styled.span<StyledDescriptionPropsType>`
     width: 200px;
 
 
-    ${myTheme.media.less640} {
+    ${myTheme.media.less700} {
       width: auto;
     }
   `}

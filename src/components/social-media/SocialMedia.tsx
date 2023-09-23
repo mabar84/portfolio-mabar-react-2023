@@ -41,7 +41,7 @@ const StyledSocialMedia = styled.ul`
     }
   }
 
-  ${myTheme.media.less640} {
+  ${myTheme.media.less700} {
     justify-content: start;
   }
 

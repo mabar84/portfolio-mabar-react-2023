@@ -35,7 +35,7 @@ const StyledNav = styled.nav`
       align-items: center;
       white-space: nowrap;
 
-      ${myTheme.media.less640} {
+      ${myTheme.media.less700} {
         font-size: 16px;
       }
 
@@ -52,7 +52,7 @@ const StyledNav = styled.nav`
       gap: 15px;
     }
 
-    ${myTheme.media.less640} {
+    ${myTheme.media.less700} {
       justify-content: start;
       flex-wrap: nowrap;
       overflow: auto;

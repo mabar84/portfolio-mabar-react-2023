@@ -30,7 +30,7 @@ const StyledHeader = styled.header`
       justify-content: space-between;
     }
 
-    ${myTheme.media.less640} {
+    ${myTheme.media.less700} {
       flex-direction: column;
       gap: 0;
       margin-bottom: 30px;
