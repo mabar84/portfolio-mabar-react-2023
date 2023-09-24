@@ -86,7 +86,7 @@ export const myTheme = {
             'HTML', 'CSS', 'SASS', 'Bootstrap', 'JavaScript', 'JQuery', 'React', 'Redux', 'Storybook'
         ],
         tools: [
-            'VSCode', 'WebStorm', 'Git', 'Github', 'bibucket', 'Figma', 'Photoshop', 'yarn', 'FileZilla'
+            'VSCode', 'WebStorm', 'Git', 'Github', 'bitbucket', 'Figma', 'Photoshop', 'yarn', 'FileZilla'
         ],
         projectsCards: [
             {

@@ -11,6 +11,8 @@ import styled from "styled-components";
 function App() {
     return (
         <StyledApp className="App">
+            <StyledTestSquare>qwe</StyledTestSquare>
+
             <Router>
                 <Header/>
 
@@ -33,3 +35,13 @@ const StyledApp = styled.div`
   padding-bottom: 60px;
 `
 
+const StyledTestSquare = styled.div`
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform: translate(50%, 40px);
+  position: absolute;
+  display: none;
+`
