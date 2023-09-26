@@ -8,22 +8,13 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: ${myTheme.colors.background};
+  *::selection {
+    color: ${myTheme.colors.gradientTo};
+    background-color: ${myTheme.colors.title};
   }
 
   * {
     scrollbar-width: none;
-  }
-
-  *::selection {
-    color: ${myTheme.colors.gradientTo};
-    background-color: ${myTheme.colors.title};
   }
 
   body::-webkit-scrollbar {
@@ -32,6 +23,15 @@ export const GlobalStyles = createGlobalStyle`
 
   body::-webkit-scrollbar-track {
     background: transparent;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: ${myTheme.colors.background};
   }
 
   .App {
