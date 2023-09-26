@@ -96,7 +96,7 @@ const StyledSlider = styled.div<{ reverse?: boolean }>`
   }
 
   &::before {
-    left: 0;
+    left: -2px;
     top: 0;
   }
 

@@ -42,7 +42,9 @@ const StyledProjectCards = styled.div`
   }
 `
 const StyledProjectCard = styled.div`
-  width: 373px;
+  width: 375px;
+  max-width: 500px;
+  flex-grow: 1;
   border-radius: 20px;
   background: #363636;
   overflow: hidden;
@@ -56,6 +58,7 @@ const StyledProjectCard = styled.div`
   }
 
   img {
+    width: 100%;
     height: 260px;
     object-fit: cover;
     transition: transform 2s;
