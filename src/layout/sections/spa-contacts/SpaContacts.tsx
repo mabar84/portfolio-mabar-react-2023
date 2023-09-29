@@ -1,10 +1,27 @@
-import React from 'react';
+import React, {ElementRef, useRef} from 'react';
 import styled from "styled-components";
 import {H2, H2Colored} from "../../../components/h2/H2";
 import {StyledSectionText} from "../../../components/StyledSectionText";
 import {myTheme} from "../../../styles/Theme.styled";
+import emailjs from '@emailjs/browser';
 
 export const SpaContacts = () => {
+
+    const form = useRef<ElementRef<'form'>>(null);
+
+    const sendEmail = (e: any) => {
+        e.preventDefault();
+
+        if (!form.current) return
+
+        emailjs.sendForm('service_tnj302b', 'template_lmerh7m', form.current, 'UMFVQEPDFXFggvlM3')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            })
+    }
+
     return (
         <StyledSpaContacts className={'container'} id={'contacts'}>
             <H2 content={'For any questions please mail me:'}/>
@@ -26,7 +43,13 @@ export const SpaContacts = () => {
             <StyledSectionText>
 
             </StyledSectionText>
-
+            <form ref={form} onSubmit={sendEmail}>
+                <input type="text" className="input modal__input" placeholder="Your Full Name*" name="name" required
+                />
+                <input type="email" className="input modal__input" placeholder="Email*" name="email" required/>
+                <textarea className="message modal__message" placeholder="Message" name="message" required></textarea>
+                <button className="button modal__button" type="submit">Отправить</button>
+            </form>
         </StyledSpaContacts>
     );
 };

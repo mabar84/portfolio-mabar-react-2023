@@ -9,7 +9,7 @@ export const ProjectCards = () => {
             {myTheme.state.projectsCards.map((el, ind) => {
                 return <StyledProjectCard key={ind} title={el.name}>
                     <div>
-                        <img src={require(`./../../../../assets/projects-images/${el.name}.webp`)}
+                        <img src={require(`./../../../../assets/projects-images/${el.name}.webp2`)}
                              alt={el.name}/>
                         <StyledProjectCardTitle>
                             {el.title}
