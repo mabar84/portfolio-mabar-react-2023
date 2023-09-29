@@ -20,6 +20,8 @@ export const SpaContacts = () => {
             }, (error) => {
                 console.log(error.text);
             })
+
+        e.target.reset()
     }
 
     return (
