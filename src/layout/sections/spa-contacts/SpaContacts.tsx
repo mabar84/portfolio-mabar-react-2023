@@ -46,8 +46,7 @@ export const SpaContacts = () => {
 
             </StyledSectionText>
             <form ref={form} onSubmit={sendEmail}>
-                <input type="text" className="input modal__input" placeholder="Your Full Name*" name="name" required
-                />
+                <input type="text" className="input modal__input" placeholder="Your Full Name*" name="name" required/>
                 <input type="email" className="input modal__input" placeholder="Email*" name="email" required/>
                 <textarea className="message modal__message" placeholder="Message" name="message" required></textarea>
                 <button className="button modal__button" type="submit">Отправить</button>
