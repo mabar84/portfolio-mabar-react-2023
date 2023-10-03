@@ -7,6 +7,7 @@ import {SpaProjects} from "./layout/sections/spa-projects/SpaProjects";
 import {SpaContacts} from "./layout/sections/spa-contacts/SpaContacts";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import styled from "styled-components";
+import {GoTopButton} from "./components/goTopButton/GoTopButton";
 
 function App() {
     return (
@@ -26,6 +27,8 @@ function App() {
                     {/*<Route element={<SpaContacts/>} path='/contacts'/>*/}
                 </Routes>
             </Router>
+
+            <GoTopButton/>
         </StyledApp>
     );
 }
