@@ -24,7 +24,6 @@ function App() {
                     <Route element={<SpaSkills/>} path='/skills'/>
                     <Route element={<SpaProjects/>} path='/projects'/>
                     <Route element={<SpaContacts/>} path='/contacts'/>
-                    {/*<Route element={<SpaContacts/>} path='/contacts'/>*/}
                 </Routes>
             </Router>
 

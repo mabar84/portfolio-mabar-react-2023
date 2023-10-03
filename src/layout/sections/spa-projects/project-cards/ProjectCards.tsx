@@ -7,7 +7,7 @@ export const ProjectCards = () => {
     return (
         <StyledProjectCards>
             {myTheme.state.projectsCards.map((el, ind) => {
-                return <StyledProjectCard key={ind} title={el.name}>
+                return <StyledProjectCard key={ind} title={el.name} href={el.link} target={"_blank"} rel={'noreferrer'}>
                     <div>
                         <img src={require(`./../../../../assets/projects-images/${el.name}.webp`)}
                              alt={el.name}/>
@@ -19,7 +19,7 @@ export const ProjectCards = () => {
                         </StyledProjectCardText>
                     </div>
 
-                    <a target={"_blank"} rel={'noreferrer'} href={el.link}>
+                    <a href={el.link} target={"_blank"} rel={'noreferrer'}>
                         <Icon iconId={'project-card-link-icon'} width={'20'} height={'20'} viewBox={'0 0 20 20'}/>
                         Live Preview
                     </a>
@@ -41,7 +41,7 @@ const StyledProjectCards = styled.div`
     justify-content: center;
   }
 `
-const StyledProjectCard = styled.div`
+const StyledProjectCard = styled.a`
   width: 375px;
   max-width: 500px;
   flex-grow: 1;
@@ -82,10 +82,6 @@ const StyledProjectCard = styled.div`
       margin-bottom: -5px;
       stroke: currentColor;
       fill: transparent;
-    }
-
-    &:hover {
-      color: ${myTheme.colors.gradientTo};
     }
   }
 
