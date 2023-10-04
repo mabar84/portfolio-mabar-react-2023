@@ -19,10 +19,10 @@ export const ProjectCards = () => {
                         </StyledProjectCardText>
                     </div>
 
-                    <a href={el.link} target={"_blank"} rel={'noreferrer'}>
+                    <span >
                         <Icon iconId={'project-card-link-icon'} width={'20'} height={'20'} viewBox={'0 0 20 20'}/>
                         Live Preview
-                    </a>
+                    </span>
                 </StyledProjectCard>
             })}
         </StyledProjectCards>
@@ -53,7 +53,7 @@ const StyledProjectCard = styled.a`
   flex-direction: column;
   justify-content: space-between;
 
-  &:hover a {
+  &:hover span {
     color: ${myTheme.colors.gradientTo};
   }
 
@@ -64,7 +64,7 @@ const StyledProjectCard = styled.a`
     transition: transform 2s;
   }
 
-  a {
+  span {
     width: max-content;
     margin-left: 29px;
     color: #FFF;

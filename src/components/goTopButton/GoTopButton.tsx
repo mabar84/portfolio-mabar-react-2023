@@ -4,6 +4,7 @@ import {Icon} from "../icon/Icon";
 import {myTheme} from "../../styles/Theme.styled";
 import {animateScroll as scroll} from "react-scroll";
 
+
 export const GoTopButton = () => {
 
     const [showButton, setShowButton] = useState(false)
