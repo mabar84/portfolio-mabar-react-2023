@@ -16,6 +16,9 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
+  position: sticky;
+  top: 0;
+  z-index: 1;
   padding: 10px 0;
   display: flex;
   justify-content: end;
@@ -23,7 +26,7 @@ const StyledHeader = styled.header`
   background-color: ${myTheme.colors.background};
 
   &.container {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 
     ${myTheme.media.less1080} {
       gap: 15px;

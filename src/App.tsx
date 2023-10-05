@@ -14,8 +14,6 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 function App() {
     return (
         <StyledApp className="App">
-            <StyledTestSquare>qwe</StyledTestSquare>
-
             <BrowserRouter>
                 <Header/>
 
@@ -38,15 +36,4 @@ export default App;
 
 const StyledApp = styled.div`
   padding-bottom: 60px;
-`
-
-const StyledTestSquare = styled.div`
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  cursor: pointer;
-  transform-style: preserve-3d;
-  transform: translate(50%, 40px);
-  position: absolute;
-  display: none;
 `
