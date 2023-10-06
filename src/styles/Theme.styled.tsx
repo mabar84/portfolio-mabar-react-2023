@@ -69,7 +69,7 @@ export const myTheme = {
                 title: 'Manager-economist',
                 organisation: 'Belarusian State University',
                 date: '2004 - 2008',
-                label: 'In absentia',
+                label: 'Correspondence education',
                 place: '',
                 showPlace: false
             },
