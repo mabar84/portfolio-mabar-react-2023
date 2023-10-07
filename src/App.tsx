@@ -9,14 +9,41 @@ import {SpaContacts} from "./layout/sections/spa-contacts/SpaContacts";
 import styled from "styled-components";
 import {GoTopButton} from "./components/goTopButton/GoTopButton";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-
+import {useEffect, useState} from "react";
 
 function App() {
+
+
+    const [error, setError] = useState(null);
+    const [isLoaded, setIsLoaded] = useState(false);
+    const [items, setItems] = useState({});
+
+    useEffect(() => {
+        fetch("/box/db/db.json", {
+            method: 'POST',
+            mode: 'cors',
+            body: "param=",
+        })
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    setIsLoaded(true);
+                    setItems(result);
+                },
+
+                (error) => {
+                    setIsLoaded(true);
+                    setError(error);
+                }
+            )
+    }, [])
+
+    console.log(items)
+
     return (
         <StyledApp className="App">
             <BrowserRouter>
                 <Header/>
-
                 <Routes>
                     <Route element={<SpaMain/>} path='/'/>
                     <Route element={<SpaMain/>} path='/home'/>

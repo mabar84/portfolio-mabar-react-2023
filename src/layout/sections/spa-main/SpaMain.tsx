@@ -5,8 +5,8 @@ import {StyledH1} from "../../../components/h1/H1";
 import styled from "styled-components";
 import {myTheme} from "../../../styles/Theme.styled";
 
-
 export const SpaMain = () => {
+
     return (
         <StyledMainContainer className={'container'} id={'home'}>
             <div>
