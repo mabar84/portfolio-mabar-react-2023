@@ -13,10 +13,14 @@ import {useEffect, useState} from "react";
 
 function App() {
 
+    type objType={
+        a:number,
+        b:number
+    }
 
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
-    const [items, setItems] = useState({});
+    const [items, setItems] = useState<objType>({a:4,"b":8});
 
     useEffect(() => {
         fetch("/box/db/db.json", {
@@ -38,7 +42,7 @@ function App() {
             )
     }, [])
 
-    console.log(items)
+    console.log(items.a+items.b)
 
     return (
         <StyledApp className="App">
