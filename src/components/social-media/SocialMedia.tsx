@@ -18,6 +18,7 @@ export const SocialMedia = () => {
 };
 
 const StyledSocialMedia = styled.ul`
+  margin-right: 3px;  
   display: flex;
   gap: 10px;
   align-items: center;

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {myTheme} from "../../styles/Theme.styled";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from 'react-router-dom';
 
 export const Nav = () => {
     return (
@@ -9,7 +9,7 @@ export const Nav = () => {
             <ul>
                 {myTheme.state.navItems.map((el, ind) => {
                     return <li key={ind}>
-                        <Link to={el[1]}>{el[0]}</Link>
+                        <NavLink to={el[1]}>{el[0]}</NavLink>
                     </li>
                 })}
             </ul>
@@ -44,6 +44,10 @@ const StyledNav = styled.nav`
 
         &:hover {
           color: ${myTheme.colors.gradientTo};
+        }
+        
+        &.active {
+         text-decoration: underline;
         }
       }
     }

@@ -14,6 +14,7 @@ export const Logo = () => {
 
 const StyledLogo = styled.a`
   margin-right: auto;
+  margin-left: 3px;
 
   svg {
     fill: white;
