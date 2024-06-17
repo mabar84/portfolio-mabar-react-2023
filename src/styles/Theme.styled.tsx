@@ -25,6 +25,11 @@ export const myTheme = {
         ],
         socialMediaItems: [
             {
+                iconId: 'soc-cv',
+                title: 'cv',
+                href: "https://mabar.ru/box/cv.pdf"
+            },
+            {
                 iconId: 'soc-git',
                 title: 'github',
                 href: "https://github.com/mabar84"
@@ -37,7 +42,7 @@ export const myTheme = {
             {
                 iconId: 'soc-linkedin',
                 title: 'LinkedIn',
-                href: "https://www.linkedin.com/in/%D0%BC%D0%B8%D1%85%D0%B0%D0%B8%D0%BB-%D0%B1%D0%B0%D1%80%D0%B0%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9-8121ab287/"
+                href: "https://www.linkedin.com/in/mikhail-baranouski-8121ab287/"
             },
         ],
         experienceCards: [
