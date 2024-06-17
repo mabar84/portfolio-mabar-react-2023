@@ -48,26 +48,34 @@ export const myTheme = {
         experienceCards: [
             {
                 title: 'Web developer',
+                organisation: 'IT-INCUBATOR',
+                date: 'Sep 2023 - present',
+                label: '',
+                place: '',
+                showPlace: true
+            },
+            {
+                title: 'Web developer',
+                organisation: 'Collabrium',
+                date: 'Jul 2023 - Sep 2023',
+                label: '',
+                place: '',
+                showPlace: true
+            },
+            {
+                title: 'Web developer',
                 organisation: 'Local Internet',
-                date: 'Apr 2023 - Jul 2023',
-                label: 'Project employment',
+                date: 'May 2022 - Jun 2023',
+                label: '',
                 place: '',
                 showPlace: true
             },
             {
                 title: 'Layout designer',
                 organisation: 'Design laboratory',
-                date: 'Dec 2021 - Jan 2023',
-                label: 'Project employment',
-                place: '',
-                showPlace: true
-            },
-            {
-                title: 'Web developer',
-                organisation: 'Freelance',
-                date: 'Jun 2021 - present',
+                date: 'May 2021 - Apr 2022',
                 label: '',
-                place: 'Everywhere',
+                place: '',
                 showPlace: true
             },
         ],
